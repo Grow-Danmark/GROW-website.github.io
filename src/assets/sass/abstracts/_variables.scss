@@ -1,0 +1,26 @@
+@use 'sass:map'; // nødvendig for at kunne tilgå sass maps
+
+// Sass:map
+$breakpoints: (
+  'small': 40em,
+  'medium': 48em,
+  'large': 64em,
+  'xlarge': 80em,
+  'xxlarge': 96em,
+);
+
+//Media query
+@mixin mq($key) {
+  // key referefer til key i breakpoints
+  // size bliver så den value ud fra hvilken key der er valgt i der ovenstående sass map
+  $size: map.get($breakpoints, $key);
+
+  @media only screen and (min-width: $size) {
+    @content;
+  }
+}
+
+// Eksempel
+// @include mq(xlarge) {
+//   background-color: aqua;
+// }

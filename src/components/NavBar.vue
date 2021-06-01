@@ -1,0 +1,40 @@
+<template>
+    <nav class="nav">
+        <g-link to="/hjem" class="nav__logo">{{ $static.metadata.siteName }}</g-link>
+        <ul class="nav__list">
+            <li v-for="page in $static.pages.edges" :key="page.databaseId">
+                <g-link :to="page.node.slug" class="nav__links">
+                {{ page.node.title }}
+                </g-link>
+            </li>
+        </ul>
+    </nav>
+</template>
+
+<static-query>
+query Pages {
+  pages: pages {
+		edges {
+      node
+      {
+        title
+        slug
+        databaseId
+      }
+    }
+  },
+    metadata {
+    siteName
+  }
+}
+</static-query>
+
+<script>
+    export default {
+        name: 'NavBar'
+    }
+</script>
+
+<style>
+
+</style>

@@ -1,0 +1,29 @@
+@use '../abstracts/colors' as c;
+@use '../abstracts/variables' as v;
+
+
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-items: center;
+    
+    
+    &__logo {
+        display: flex;
+        align-items: center;
+        margin-left: 0;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: row;
+        list-style-type: none;
+    }
+
+    &__links {
+        color: c.$link-color;
+        margin-left: 1em;
+    }
+}

@@ -1,6 +1,6 @@
-![Gridsome Logo](https://gridsome.org/logos/logo-normal.svg)
-# Gridsome WordPress Boilerplate
-*"boilerplate for using Gridsome with headless WordPress & GraphQL"*
+![Gridsome Logo](https://wp.grow.dk/wp-content/uploads/2021/06/Full-Teal-on-white-1000x1000-1-e1622617570618.png)
+# GROW
+*"En forening af unge for unge"*
 
 ## Build Setup
 ```bash

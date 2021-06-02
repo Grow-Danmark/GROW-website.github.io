@@ -18,8 +18,7 @@ module.exports = function(api) {
         nodes{
           title
           slug
-          id
-          pageId
+          databaseId
         }
       }
     }

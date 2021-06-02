@@ -6,16 +6,16 @@
 
 module.exports = {
   metaInfo: {
-    siteName: 'Grow', // Change to project name
-    title: 'test',
-    siteUrl: 'siteUrl', // Change to siteUrl
+    siteName: 'GROW', // Change to project name
+    title: 'GROW',
+    siteUrl: 'www.grow.dk', // Change to siteUrl
     siteDescription: 'En forening af unge for unge', // Change to fit project description
   },
   plugins: [
     {
       use: 'gridsome-source-graphql',
       options: {
-        url: 'http://test.scottlind.dk/graphql', // Insert graphql endpoint after installing plugin for wordpress
+        url: 'https://wp.grow.dk/graphql', // Insert graphql endpoint after installing plugin for wordpress
         fieldName: 'wp',
         typeName: 'wpTypes',
       },

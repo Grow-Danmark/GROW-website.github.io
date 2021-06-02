@@ -11,10 +11,10 @@
                 <div class="col-2">2</div>
                 <div class="col-4">4</div>
                 <div class="col-4 col-offset-4">4</div>
+                <div class="col-6 col-offset-4">6</div>
             </div>
         </section>
     </main>
-
 </layout>
 </template>
 

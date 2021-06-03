@@ -45,7 +45,6 @@ Other related goodies:
 ## WordPress Plugins to be installed
  - [WP GraphQL](https://wordpress.org/plugins/wp-graphql/) 
  - [WP GraphQL for Advanced Custom Fields](https://wpgraphql.com/acf)
- - [WP-REST-API V2 Menus](https://wordpress.org/plugins/wp-rest-api-v2-menus/)
  - [Advanced Custom Fields](https://wordpress.org/plugins/advanced-custom-fields/)
 
 ### Optional WordPress Plugins:

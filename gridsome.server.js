@@ -10,31 +10,30 @@ module.exports = function(api) {
     // Use the Data Store API here: https://gridsome.org/docs/data-store-api/
   });
 
-  api.createPages(async ({ graphql, createPage }) =>{
+  api.createPages(async ({ graphql, createPage }) => {
     // Use the Pages API here: https://gridsome.org/docs/pages-api
     const { data } = await graphql(`
-    query {
-      pages{
-        nodes{
-          title
-          slug
-          databaseId
+      query wordpress {
+        pages {
+          nodes {
+            title
+            uri
+            databaseId
+          }
         }
       }
-    }
-      `)    
-
-    data.pages.nodes.forEach(function(node, index){
+    `);
+    data.pages.nodes.forEach(function(node, index) {
       createPage({
-        path: `/${node.slug}`,
+        path: `/${node.uri}`,
         component: './src/templates/WP_Page.vue',
         context: {
           id: node.id,
-          slug: node.slug,
+          slug: node.uri,
           title: node.title,
-          pageId: node.pageId
-        }
-      })
-    })
-})
+          pageId: node.pageId,
+        },
+      });
+    });
+  });
 };

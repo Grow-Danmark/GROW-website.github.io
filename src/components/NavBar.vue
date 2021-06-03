@@ -1,9 +1,9 @@
 <template>
     <nav class="nav">
-        <g-link to="/hjem" class="nav__logo">{{ $static.metadata.siteName }}</g-link>
+        <g-link to="/" class="nav__logo">{{ $static.generalSettings.title }}</g-link>
         <ul class="nav__list">
             <li v-for="page in $static.pages.edges" :key="page.databaseId">
-                <g-link :to="page.node.slug" class="nav__links">
+                <g-link :to="page.node.uri" class="nav__links">
                 {{ page.node.title }}
                 </g-link>
             </li>
@@ -18,13 +18,13 @@ query Pages {
       node
       {
         title
-        slug
+        uri
         databaseId
       }
     }
   },
-    metadata {
-    siteName
+  generalSettings {
+    title
   }
 }
 </static-query>

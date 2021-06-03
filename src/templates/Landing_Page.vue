@@ -1,40 +1,34 @@
 <template>
-<layout>
-    <main v-if="$page.page.title == 'hjem'" class="section">
+  <Layout>
+    <main class="section">
         <section class="container">
-            <h1 v-html="$page.page.title" />
-            <!-- <div v-if="$page.page.featuredImage" class="featured-image">
-                <img src="$page.page.featuredImage.sourceUrl" />
-            </div> -->
-            <article class="col-6" v-html="$page.page.content" />
-            <div class="row">
-                <div class="col-12">hjem</div>
-                <div class="col-4">hjem</div>
-                <div class="col-4 col-offset-4">hjem</div>
-            </div>
+            <h1 v-html="$page.home.title" />
+            test
+            <article class="col-6" v-html="$page.home.content" />
         </section>
     </main>
-
-</layout>
+  </Layout>
 </template>
-
 <page-query>
-query wpPage ($slug: String) {
-	page: pageBy(uri: $slug) {
+query home {
+	home: pageBy(uri: "hjem") {
         title
         content
         id
-	}
+	},
+    generalSettings {
+    title
+  }
 }
 </page-query>
 
 <script>
 export default {
-  name: 'wpPage',
+  name: 'home',
   metaInfo() {
     return {
       title: this.$page.page.title,
-      titleTemplate: 'Site Name | ' + this.$page.page.title,
+      titleTemplate: this.$page.generalSettings.title + ' | ' + this.$page.page.title,
       meta: [
         { name: 'description', content: this.$page.title }
       ]
@@ -46,8 +40,5 @@ export default {
 
 
 <style>
-.row > div {
-    background-color: lightblue;
-    border: 1px solid black;
-}
+
 </style>

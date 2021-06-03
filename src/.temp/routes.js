@@ -8,7 +8,7 @@ export default [
     component: c1
   },
   {
-    path: "/eksempel-side/",
+    path: "/privatlivspolitik/",
     component: c1
   },
   {

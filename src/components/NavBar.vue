@@ -1,6 +1,6 @@
 <template>
-    <nav class="nav">
-        <g-link to="/" class="nav__logo">{{ $static.generalSettings.title }}</g-link>
+    <nav role="navigation" class="nav">
+        <g-link to="/" class="nav__logo"><g-image src="~/assets/img/logo.png" width="150px"/></g-link>
         <ul class="nav__list">
             <li v-for="page in $static.pages.edges.slice().reverse()" :key="page.databaseId">
                 <g-link :to="page.node.uri" class="nav__links">
@@ -20,6 +20,18 @@ query Pages {
         title
         uri
         databaseId
+      }
+    }
+  },
+  menuItems {
+    nodes {
+      childItems {
+        edges {
+          node {
+            label
+            path
+          }
+        }
       }
     }
   },

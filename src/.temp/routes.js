@@ -4,6 +4,18 @@ const c3 = () => import(/* webpackChunkName: "page--src--pages--index-vue" */ "/
 
 export default [
   {
+    path: "/vores-historie/",
+    component: c1
+  },
+  {
+    path: "/vaerdier/",
+    component: c1
+  },
+  {
+    path: "/samarbejdspartnere/",
+    component: c1
+  },
+  {
     path: "/om-grow/",
     component: c1
   },
@@ -17,6 +29,14 @@ export default [
   },
   {
     path: "/gor-en-forskel/",
+    component: c1
+  },
+  {
+    path: "/grow-teamet/",
+    component: c1
+  },
+  {
+    path: "/formal-vision/",
     component: c1
   },
   {

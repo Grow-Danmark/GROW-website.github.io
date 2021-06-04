@@ -1,0 +1,9 @@
+@use '../abstracts/variables' as v;
+
+.layout {
+  max-width: map-get(v.$breakpoints, xlarge);
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+
+}

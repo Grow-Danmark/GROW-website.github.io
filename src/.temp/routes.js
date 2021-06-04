@@ -8,7 +8,19 @@ export default [
     component: c1
   },
   {
-    path: "/privatlivspolitik/",
+    path: "/kontakt-os/",
+    component: c1
+  },
+  {
+    path: "/fa-hjaelp-hos-grow/",
+    component: c1
+  },
+  {
+    path: "/gor-en-forskel/",
+    component: c1
+  },
+  {
+    path: "/det-gor-vi/",
     component: c1
   },
   {

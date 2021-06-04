@@ -2,6 +2,7 @@
   <div class="layout">
       <AppHeader />
     <slot/>
+    <AppFooter />
   </div>
 </template>
 
@@ -15,12 +16,14 @@ query {
 
 <script>
 import AppHeader from '~/components/AppHeader.vue'
+import AppFooter from '~/components/AppFooter.vue'
 
 
 
 export default {
   components: {
-    AppHeader
+    AppHeader,
+    AppFooter
   }
 }
 </script>

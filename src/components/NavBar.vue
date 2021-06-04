@@ -7,6 +7,7 @@
                 {{ page.node.title }}
                 </g-link>
             </li>
+
         </ul>
     </nav>
 </template>
@@ -20,18 +21,6 @@ query Pages {
         title
         uri
         databaseId
-      }
-    }
-  },
-  menuItems {
-    nodes {
-      childItems {
-        edges {
-          node {
-            label
-            path
-          }
-        }
       }
     }
   },

@@ -2,7 +2,7 @@
 <layout>
     <main class="section">
         <section class="container">
-            <h1 v-html="$page.page.title" />
+            <!-- <h1 v-html="$page.page.title" /> -->
             <!-- <div v-if="$page.page.featuredImage" class="featured-image">
                 <img src="$page.page.featuredImage.sourceUrl" />
             </div> -->

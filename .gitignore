@@ -1,6 +1,5 @@
 /node_modules/gridsome/*
 /node_modules/
-.vscode
 .cache
 
 *.log

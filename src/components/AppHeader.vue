@@ -1,15 +1,21 @@
 <template>
 <header>
-    <NavBar />
+    <!-- <NavBar /> -->
+    <OmNav />
 </header>
 </template>
 
 <script>
 import NavBar from '~/components/NavBar.vue'
+import OmNav from '~/components/OmNav.vue'
+
+
+
 
 export default {
     components: {
-    NavBar
+    NavBar,
+    OmNav
     }
 }
 </script>

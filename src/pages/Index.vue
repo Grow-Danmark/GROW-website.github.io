@@ -2,7 +2,8 @@
   <Layout>
     <main class="section">
         <section class="container">
-            <h1 v-html="$page.home.title" />
+            <!-- <h1 v-html="$page.home.title" /> -->
+            index
             <article class="col-6" v-html="$page.home.content" />
         </section>
     </main>

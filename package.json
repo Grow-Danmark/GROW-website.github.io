@@ -10,7 +10,8 @@
     "@gridsome/source-wordpress": "^0.5.3",
     "gridsome": "^0.7.0",
     "gridsome-source-graphql": "^1.0.2",
-    "sass": "^1.33.0"
+    "sass": "^1.33.0",
+    "vuesax": "^3.11.15"
   },
   "devDependencies": {
     "sass-loader": "^10.2.0"

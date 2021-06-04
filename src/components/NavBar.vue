@@ -1,5 +1,5 @@
 <template>
-    <nav class="nav">
+    <nav class="nav center examplex">
         <g-link to="/" class="nav__logo">{{ $static.generalSettings.title }}</g-link>
         <ul class="nav__list">
             <li v-for="page in $static.pages.edges" :key="page.databaseId">
@@ -36,5 +36,8 @@ query Pages {
 </script>
 
 <style>
+.logo {
+  margin-left: -10em;
 
+}
 </style>

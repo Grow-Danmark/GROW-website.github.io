@@ -8,7 +8,7 @@
 
 <script>
 import NavBar from '~/components/NavBar.vue'
-import StripeMenu from '~/components/StripeMenu.vue'
+import StripeMenu from '~/components/StripeMenu/StripeMenu.vue'
 
 
 

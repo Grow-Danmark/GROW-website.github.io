@@ -8,15 +8,15 @@ export default [
     component: c1
   },
   {
+    path: "/workshop/",
+    component: c1
+  },
+  {
     path: "/vaerdier/",
     component: c1
   },
   {
     path: "/samarbejdspartnere/",
-    component: c1
-  },
-  {
-    path: "/om-grow/",
     component: c1
   },
   {
@@ -28,10 +28,6 @@ export default [
     component: c1
   },
   {
-    path: "/gor-en-forskel/",
-    component: c1
-  },
-  {
     path: "/grow-teamet/",
     component: c1
   },
@@ -40,7 +36,11 @@ export default [
     component: c1
   },
   {
-    path: "/det-gor-vi/",
+    path: "/bliv-ambassador/",
+    component: c1
+  },
+  {
+    path: "/cert/",
     component: c1
   },
   {

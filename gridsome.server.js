@@ -23,6 +23,7 @@ module.exports = function(api) {
         }
       }
     `);
+    
     data.pages.nodes.forEach(function(node, index) {
       createPage({
         path: `/${node.uri}`,

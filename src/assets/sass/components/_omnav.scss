@@ -1,37 +1,27 @@
 ul {
-  background: darkorange;
+    display: flex;
+    justify-content: space-between;
   list-style: none;
   margin: 0;
   padding-left: 0;
+
+  .nav-logo {
+      display: inherit;
+  }
 }
+
 
 li {
   color: #fff;
-  background: darkorange;
+  background: #242444;
   display: block;
   float: left;
   padding: 1rem;
   position: relative;
   text-decoration: none;
   transition-duration: 0.5s;
-}
-  
-li a {
-  color: white;
-}
 
-li:hover,
-li:focus-within {
-  background: #h7hefd;
-  cursor: pointer;
-}
-
-li:focus-within a {
-  outline: none;
-}
-
-ul li ul {
-  background: orange;
+  ul {
   visibility: hidden;
   opacity: 0;
   min-width: 5rem;
@@ -40,6 +30,27 @@ ul li ul {
   margin-top: 1rem;
   left: 0;
   display: none;
+
+  li {
+  clear: both;
+  width: 100%;
+  }
+
+  }
+  a {
+      color: white;
+  }
+}
+  
+
+li:hover,
+li:focus-within {
+  background: #333;
+  cursor: pointer;
+}
+
+li:focus-within a {
+  outline: none;
 }
 
 ul li:hover > ul,
@@ -49,9 +60,4 @@ ul li ul:focus {
    visibility: visible;
    opacity: 1;
    display: block;
-}
-
-ul li ul li {
-  clear: both;
-  width: 100%;
 }

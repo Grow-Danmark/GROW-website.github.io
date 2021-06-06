@@ -16,15 +16,11 @@ export default [
     component: c1
   },
   {
+    path: "/stot-grow/",
+    component: c1
+  },
+  {
     path: "/samarbejdspartnere/",
-    component: c1
-  },
-  {
-    path: "/kontakt-os/",
-    component: c1
-  },
-  {
-    path: "/fa-hjaelp-hos-grow/",
     component: c1
   },
   {
@@ -40,7 +36,11 @@ export default [
     component: c1
   },
   {
-    path: "/cert/",
+    path: "/bliv-samarbejdspartner/",
+    component: c1
+  },
+  {
+    path: "/certificeringer/",
     component: c1
   },
   {

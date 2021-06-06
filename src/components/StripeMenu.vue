@@ -7,7 +7,7 @@
     <ul>
         <div class="nav-logo">
             <g-link to="/">
-            <g-image src="~/assets/img/logo.png" width="130"></g-image>
+            <g-image src="~/assets/img/logo.png" width="130" quality="100"></g-image>
             </g-link>
         </div>
         <ul class="cool">

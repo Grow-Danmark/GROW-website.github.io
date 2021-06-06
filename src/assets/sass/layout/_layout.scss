@@ -1,8 +1,18 @@
 @use '../abstracts/variables' as v;
 
-
 .layout {
   max-width: 80em;
   margin: 0 auto;
   padding: 0 2em;
+}
+
+@include v.mq(xlarge) {
+  .layout {
+    max-width: xlarge;
+  }
+}
+@include v.mq(large) {
+  .layout {
+    max-width: large;
+  }
 }

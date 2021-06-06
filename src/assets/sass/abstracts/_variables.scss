@@ -14,7 +14,7 @@ $breakpoints: (
   // size bliver så den value ud fra hvilken key der er valgt i der ovenstående sass map
   $size: map.get($breakpoints, $key);
 
-  @media only screen and (min-width: $size) {
+  @media only screen and (max-width: $size) {
     @content;
   }
 }

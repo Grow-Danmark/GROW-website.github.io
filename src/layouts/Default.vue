@@ -1,8 +1,10 @@
 <template>
-  <div class="layout">
-      <AppHeader />
+  <div>
+    <AppHeader />
+    <div class="layout">
     <slot/>
     <AppFooter />
+    </div>
   </div>
 </template>
 

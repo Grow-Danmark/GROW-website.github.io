@@ -1,8 +1,8 @@
+@use '../abstracts/variables' as v;
 
 
 .layout {
-  max-width: xxlarge;
+  max-width: 80em;
   margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 0 2em;
 }

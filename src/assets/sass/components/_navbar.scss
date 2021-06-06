@@ -18,8 +18,8 @@ nav {
   /* background: rgba(0,0,0,0.2); */
   padding: 0.5em;
   display: inline-block;
-  margin: 20px;
-  border-radius: 5px;
+  margin: 1.2em;
+  border-radius: 0.3em;
 }
 
 nav ul {
@@ -52,6 +52,24 @@ nav ul {
   a {
     display: block;
     padding: 0.2em;
+  }
+}
+@include v.mq(large) {
+  nav ul {
+  }
+  .dropdown {
+    display: block;
+    opacity: 1;
+  }
+  .trigger-enter .dropdown {
+    display: none;
+  }
+  
+  .trigger-enter-active .dropdown {
+    opacity: 0;
+  }
+  .dropdownBackground {
+    display: none;
   }
 }
 
@@ -117,11 +135,11 @@ nav ul {
 }
 
 .single-list-items {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 .forskel {
-    min-width: 12em;
+  min-width: 12em;
 }
 
 .dropdown a {

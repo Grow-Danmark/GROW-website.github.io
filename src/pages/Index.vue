@@ -2,7 +2,6 @@
   <Layout>
     <main class="section">
         <section class="container">
-            <!-- <h1 v-html="$page.home.title" /> -->
             index
             <article class="col-6" v-html="$page.home.content" />
         </section>
@@ -27,7 +26,7 @@ export default {
   name: 'home',
   metaInfo() {
     return {
-      title: this.$page.page.title,
+      title: this.$page.generalSettings.title,
       titleTemplate: this.$page.generalSettings.title + ' | ' + this.$page.page.title,
       meta: [
         { name: 'description', content: this.$page.title }

@@ -23,14 +23,14 @@ module.exports = function(api) {
         }
       }
     `);
-    
+
     data.pages.nodes.forEach(function(node, index) {
       createPage({
         path: `/${node.uri}`,
         component: './src/templates/WP_Page.vue',
         context: {
           id: node.id,
-          slug: node.uri,
+          uri: node.uri,
           title: node.title,
           pageId: node.pageId,
         },

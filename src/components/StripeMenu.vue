@@ -53,10 +53,10 @@
             </div>
         </li>
             <li>
-                <g-link to="/fa-hjaelp-hos-grow">Få hjælp hos GROW</g-link>
+                <g-link to="/faa-hjaelp-hos-grow">Få hjælp hos GROW</g-link>
             </li>
             <li>
-                <g-link to="/kontakt-os">Kontakt os</g-link>
+                <g-link to="/kontakt">Kontakt os</g-link>
             </li>
         </ul>
     </ul>
@@ -71,19 +71,22 @@ export default {
   const nav  = document.querySelector('.top');
 
   function handleEnter() {
-    this.classList.add('trigger-enter');
-    setTimeout(() => this.classList.contains('trigger-enter') && this.classList.add('trigger-enter-active'), 150);
-    background.classList.add('open');
-
-    const dropdown = this.querySelector('.dropdown');
-    const dropdownCoords = dropdown.getBoundingClientRect();
-    const navCoords = nav.getBoundingClientRect();
-
-    const coords = {
-      height: dropdownCoords.height,
-      width: dropdownCoords.width,
-      top: dropdownCoords.top - navCoords.top,
-      left: dropdownCoords.left - navCoords.left
+      if(window.innerWidth > 1024) {
+          this.classList.add('trigger-enter');
+          setTimeout(() => this.classList.contains('trigger-enter') && this.classList.add('trigger-enter-active'), 150);
+          background.classList.add('open');
+      }
+    
+        const dropdown = this.querySelector('.dropdown');
+        const dropdownCoords = dropdown.getBoundingClientRect();
+        const navCoords = nav.getBoundingClientRect();
+    
+        const coords = {
+          height: dropdownCoords.height,
+          width: dropdownCoords.width,
+          top: dropdownCoords.top - navCoords.top,
+          left: dropdownCoords.left - navCoords.left
+    
     };
 
     background.style.setProperty('width', `${coords.width}px`);
@@ -100,7 +103,6 @@ export default {
   triggers.forEach(trigger => trigger.addEventListener('mouseleave', handleLeave));
   }
 }
-
 </script>
 
 <style lang="scss">

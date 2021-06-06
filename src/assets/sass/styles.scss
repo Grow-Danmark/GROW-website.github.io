@@ -1,9 +1,10 @@
 @use '../sass/base/normalize';
+@use '../sass/base/root';
+@use '../sass/base/body';
 @use '../sass/abstracts/index';
-@use '../sass/components/components';
+@use '../sass/abstracts/links';
 @use '../sass/abstracts/variables';
 @use '../sass/abstracts/functions';
-@use '../sass/base/root';
+@use '../sass/layout/layout';
 @use '../sass/typography/typography';
-@use '../sass/abstracts/links';
-@use '../sass/components/omnav';
+@use '../sass/components/components';

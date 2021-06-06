@@ -1,36 +1,24 @@
 @use '../abstracts/colors' as c;
 @use '../abstracts/variables' as v;
 
-html {
-  box-sizing: border-box;
-  font-family: 'Arial Rounded MT Bold', 'Helvetica Rounded', Arial, sans-serif;
-}
-
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
-}
-
-h2 {
-  margin-top: 0;
-  padding-top: 0.8em;
-}
-
 nav {
   position: relative;
   perspective: 600px;
 }
+.cool {
+
+}
 .nav-logo {
   display: flex;
   align-items: center;
+  justify-content: start;
 }
+
 .cool > li > a {
   color: #333;
-  text-decoration: none;
-  font-size: 20px;
+  font-size: 1.2em;
   /* background: rgba(0,0,0,0.2); */
-  padding: 10px 20px;
+  padding: .5em;
   display: inline-block;
   margin: 20px;
   border-radius: 5px;
@@ -41,7 +29,7 @@ nav ul {
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
 }
 
 .cool > li {

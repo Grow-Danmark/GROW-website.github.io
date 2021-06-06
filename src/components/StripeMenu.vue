@@ -4,52 +4,50 @@
     <div class="dropdownBackground">
       <span class="arrow"></span>
     </div>
-    <ul class="cool">
-    <div class="nav-logo"><g-image src="~/favicon.png" width="50"></g-image></div>
-      <li>
-        <g-link>Om GROW</g-link>
-        <div class="dropdown dropdown1">
-          <div class="dual-list">
-           <ul>
-               <span>Lær GROW at kende</span>
-                <g-link to="/">Vores historie</g-link>
-                <g-link to="/">Formål og vision</g-link>
-                <g-link to="/">Værdier</g-link>
-           </ul>
-            <ul>
-               <span>Mød teamet bag GROW</span>
-                <g-link to="/">GROW teamet</g-link>
-                <g-link to="/">Samarbejdspartnere</g-link>
-           </ul>
-          </div>
+    <ul>
+        <div class="nav-logo">
+            <g-link to="/">
+            <g-image src="~/favicon.png" width="50"></g-image>
+            </g-link>
         </div>
-      </li>
-      <li>
-        <a href="#">Courses</a>
-        <ul class="dropdown courses">
-          <li>
-            <span class="code">RFB</span>
-            <a href="https://ReactForBeginners.com">React For Beginners</a>
-          </li>
-          <li>
-            <span class="code">ES6</span>
-            <a href="https://ES6.io">ES6 For Everyone</a>
-          </li>
-          <li>
-            <span class="code">MMD</span>
-            <a href="http://MasteringMarkdown.com">Mastering Markdown</a>
-          </li>
+        <ul class="cool">
+        <li>
+            <g-link>Om GROW</g-link>
+            <div class="dropdown dropdown1">
+            <div class="dual-list">
+            <ul>
+                <span>Lær GROW at kende</span>
+                    <g-link to="/">Vores historie</g-link>
+                    <g-link to="/">Formål og vision</g-link>
+                    <g-link to="/">Værdier</g-link>
+            </ul>
+                <ul>
+                <span>Mød teamet bag GROW</span>
+                    <g-link to="/">GROW teamet</g-link>
+                    <g-link to="/">Samarbejdspartnere</g-link>
+            </ul>
+            </div>
+            </div>
+        </li>
+        <li>
+            <a href="#">Det gør vi</a>
+            <ul class="dropdown courses">
+                <g-link to="/">Samarbejdspartnere</g-link>
+            </ul>
+        </li>
+        <li>
+            <a href="#">Other Links</a>
+            <ul class="dropdown courses">
+                <g-link to="/">Samarbejdspartnere</g-link>
+            </ul>
+        </li>
+            <li>
+                <g-link to="/samarbejdspartnere">Få hjælp hos GROW</g-link>
+            </li>
+            <li>
+                <g-link to="/samarbejdspartnere">Kontakt os</g-link>
+            </li>
         </ul>
-      </li>
-      <li>
-        <a href="#">Other Links</a>
-        <ul class="dropdown dropdown3">
-          <li><a class="button" href="http://twitter.com/wesbos">Twitter</a></li>
-          <li><a class="button" href="http://facebook.com/wesbos.developer">Facebook</a></li>
-          <li><a class="button" href="http://wesbos.com">Blog</a></li>
-          <li><a class="button" href="http://wesbos.com/courses">Course Catalog</a></li>
-        </ul>
-      </li>
     </ul>
   </nav>
 </template>
@@ -57,7 +55,7 @@
 <script>
 export default {
   mounted: function() {
-  const triggers = document.querySelectorAll('.cool > li');
+  const triggers = document.querySelectorAll('.cool > li:nth-child(-n+4)');
   const background  = document.querySelector('.dropdownBackground');
   const nav  = document.querySelector('.top');
 

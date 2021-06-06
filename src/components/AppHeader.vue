@@ -1,13 +1,13 @@
 <template>
 <header>
     <!-- <NavBar /> -->
-    <OmNav />
+    <StripeMenu />
 </header>
 </template>
 
 <script>
 import NavBar from '~/components/NavBar.vue'
-import OmNav from '~/components/OmNav.vue'
+import StripeMenu from '~/components/StripeMenu.vue'
 
 
 
@@ -15,7 +15,7 @@ import OmNav from '~/components/OmNav.vue'
 export default {
     components: {
     NavBar,
-    OmNav
+    StripeMenu
     }
 }
 </script>

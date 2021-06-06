@@ -7,45 +7,56 @@
     <ul>
         <div class="nav-logo">
             <g-link to="/">
-            <g-image src="~/favicon.png" width="50"></g-image>
+            <g-image src="~/assets/img/logo.png" width="130"></g-image>
             </g-link>
         </div>
         <ul class="cool">
         <li>
             <g-link>Om GROW</g-link>
-            <div class="dropdown dropdown1">
-            <div class="dual-list">
-            <ul>
-                <span>Lær GROW at kende</span>
-                    <g-link to="/">Vores historie</g-link>
-                    <g-link to="/">Formål og vision</g-link>
-                    <g-link to="/">Værdier</g-link>
-            </ul>
-                <ul>
-                <span>Mød teamet bag GROW</span>
-                    <g-link to="/">GROW teamet</g-link>
-                    <g-link to="/">Samarbejdspartnere</g-link>
-            </ul>
-            </div>
+            <div class="dropdown">
+                <div class="dual-list">
+                    <ul>
+                        <span>Lær GROW at kende</span>
+                            <g-link to="/vores-historie">Vores historie</g-link>
+                            <g-link to="/formaal-vision">Formål og vision</g-link>
+                            <g-link to="/vaerdier">Værdier</g-link>
+                    </ul>
+                        <ul>
+                        <span>Mød teamet bag GROW</span>
+                            <g-link to="/grow-teamet">GROW teamet</g-link>
+                            <g-link to="/samarbejdspartnere">Samarbejdspartnere</g-link>
+                    </ul>
+                </div>
             </div>
         </li>
         <li>
-            <a href="#">Det gør vi</a>
-            <ul class="dropdown courses">
-                <g-link to="/">Samarbejdspartnere</g-link>
-            </ul>
+            <g-link>Det gør vi</g-link>
+            <div class="dropdown">
+                <div class="single-list">
+                    <ul class="single-list-items">
+                        <g-link to="/certificeringer">Certificeringer</g-link>
+                        <g-link to="/workshops-foredrag-arrangementer">Workshops, foredrag og arrangementer</g-link>
+                    </ul>
+                </div>
+            </div>
         </li>
         <li>
-            <a href="#">Other Links</a>
-            <ul class="dropdown courses">
-                <g-link to="/">Samarbejdspartnere</g-link>
-            </ul>
+            <g-link>Gør en forskel</g-link>
+            <div class="dropdown">
+                <div class="single-list">
+                    <ul class="single-list-items forskel">
+                        <g-link to="/bliv-ambassador">Bliv GROW-ambassadør</g-link>
+                        <g-link to="/bliv-samarbejdspartner">Bliv samarbejdspartner</g-link>
+                        <g-link to="/stot-grow">Støt GROW</g-link>
+                    </ul>
+                </div>
+            </div>
         </li>
             <li>
-                <g-link to="/samarbejdspartnere">Få hjælp hos GROW</g-link>
+                <g-link to="/fa-hjaelp-hos-grow">Få hjælp hos GROW</g-link>
             </li>
             <li>
-                <g-link to="/samarbejdspartnere">Kontakt os</g-link>
+                <g-link to="/kontakt-os">Kontakt os</g-link>
             </li>
         </ul>
     </ul>
@@ -55,7 +66,7 @@
 <script>
 export default {
   mounted: function() {
-  const triggers = document.querySelectorAll('.cool > li:nth-child(-n+4)');
+  const triggers = document.querySelectorAll('.cool > li:nth-child(-n+3)');
   const background  = document.querySelector('.dropdownBackground');
   const nav  = document.querySelector('.top');
 

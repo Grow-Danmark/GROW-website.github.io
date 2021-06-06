@@ -6,7 +6,6 @@ nav {
   perspective: 600px;
 }
 .cool {
-
 }
 .nav-logo {
   display: flex;
@@ -18,7 +17,7 @@ nav {
   color: #333;
   font-size: 1.2em;
   /* background: rgba(0,0,0,0.2); */
-  padding: .5em;
+  padding: 0.5em;
   display: inline-block;
   margin: 20px;
   border-radius: 5px;
@@ -50,6 +49,11 @@ nav ul {
   transform: translateY(100px);
   will-change: opacity;
   display: none;
+
+  a {
+    display: block;
+    padding: 0.2em;
+  }
 }
 
 .trigger-enter .dropdown {
@@ -109,37 +113,19 @@ nav ul {
     padding: 0.2em;
   }
 }
-
 .single-list {
-  min-width: 300px;
+  min-width: 10em;
+}
 
-  li {
-    padding: 1em 0;
-    display: block;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-  }
+.single-list-items {
+    display: flex;
+    flex-direction: column;
+}
+.forskel {
+    min-width: 12em;
 }
 
 .dropdown a {
   text-decoration: none;
-  color: #ffc600;
-}
-
-a.button {
-  background: black;
-  display: block;
-  padding: 10px;
-  color: white;
-  margin-bottom: 10px;
-}
-
-/* Matches Twitter, TWITTER, twitter, tWitter, TWiTTeR... */
-.button[href*='twitter'] {
-  background: #019fe9;
-}
-.button[href*='facebook'] {
-  background: #3b5998;
-}
-.button[href*='courses'] {
-  background: #ffc600;
+  color: #028785;
 }

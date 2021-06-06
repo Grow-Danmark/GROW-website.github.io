@@ -4,11 +4,11 @@ const c3 = () => import(/* webpackChunkName: "page--src--pages--index-vue" */ "/
 
 export default [
   {
-    path: "/vores-historie/",
+    path: "/workshops-foredrag-arrangementer/",
     component: c1
   },
   {
-    path: "/workshop/",
+    path: "/vores-historie/",
     component: c1
   },
   {
@@ -32,7 +32,7 @@ export default [
     component: c1
   },
   {
-    path: "/formal-vision/",
+    path: "/formaal-vision/",
     component: c1
   },
   {

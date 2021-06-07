@@ -36,6 +36,10 @@ nav ul {
   justify-content: center;
 }
 
+.cool > li:hover {
+  // filter: drop-shadow(0 .5rem 1rem hsla(179, 97%, 27%, 1));
+}
+
 .menu-item {
   font-weight: 600;
 }

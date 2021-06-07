@@ -12,7 +12,7 @@
         </div>
         <ul class="cool">
         <li>
-            <g-link>Om GROW</g-link>
+            <g-link class="menu-item">Om GROW</g-link>
             <div class="dropdown">
                 <div class="dual-list">
                     <ul>
@@ -30,7 +30,7 @@
             </div>
         </li>
         <li>
-            <g-link>Det gør vi</g-link>
+            <g-link class="menu-item">Det gør vi</g-link>
             <div class="dropdown">
                 <div class="single-list">
                     <ul class="single-list-items">
@@ -41,7 +41,7 @@
             </div>
         </li>
         <li>
-            <g-link>Gør en forskel</g-link>
+            <g-link class="menu-item">Gør en forskel</g-link>
             <div class="dropdown">
                 <div class="single-list">
                     <ul class="single-list-items forskel">
@@ -53,10 +53,10 @@
             </div>
         </li>
             <li>
-                <g-link to="/faa-hjaelp-hos-grow">Få hjælp hos GROW</g-link>
+                <g-link class="menu-item" to="/faa-hjaelp-hos-grow">Få hjælp hos GROW</g-link>
             </li>
             <li>
-                <g-link to="/kontakt">Kontakt os</g-link>
+                <g-link class="menu-item" to="/kontakt">Kontakt os</g-link>
             </li>
         </ul>
     </ul>

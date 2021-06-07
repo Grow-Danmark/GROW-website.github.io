@@ -4,43 +4,7 @@ const c3 = () => import(/* webpackChunkName: "page--src--pages--index-vue" */ "/
 
 export default [
   {
-    path: "/workshops-foredrag-arrangementer/",
-    component: c1
-  },
-  {
-    path: "/vores-historie/",
-    component: c1
-  },
-  {
-    path: "/vaerdier/",
-    component: c1
-  },
-  {
-    path: "/stot-grow/",
-    component: c1
-  },
-  {
-    path: "/samarbejdspartnere/",
-    component: c1
-  },
-  {
-    path: "/grow-teamet/",
-    component: c1
-  },
-  {
-    path: "/formaal-vision/",
-    component: c1
-  },
-  {
-    path: "/bliv-ambassador/",
-    component: c1
-  },
-  {
-    path: "/bliv-samarbejdspartner/",
-    component: c1
-  },
-  {
-    path: "/certificeringer/",
+    path: "/undefined/",
     component: c1
   },
   {

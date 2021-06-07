@@ -27,27 +27,4 @@ $columns: 12;
   }
 }
 
-// //Two for each loops, looping through colors map and the maps inside that
-// //to output colors as costum properties in :root.
-// :root {
-//   @each $color, $shades in c.$colors {
-//     @each $shade, $value in $shades {
-//       --clr-#{$color}-#{$shade}: #{$value};
-//     }
-//   }
-//   // setting font sizes with the same principle as above
-//   // but with small and large screen sizes though an if-else statement
-//   @each $screen-size, $font-size in f.$type-scale {
-//     @if $screen-size == small {
-//       @each $size, $value in $font-size {
-//         --fs-#{$size}: #{$value};
-//       }
-//     } @else {
-//         @include v.mq(xlarge) {
-//             @each $size, $value in $font-size {
-//                 --fs-#{$size}: #{$value};
-//               }
-//         }
-//     }
-//   }
-// }
+

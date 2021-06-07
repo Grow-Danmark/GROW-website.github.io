@@ -5,21 +5,10 @@ nav {
   position: relative;
   perspective: 600px;
 }
-
 .nav-logo {
   display: flex;
   align-items: center;
   justify-content: start;
-}
-
-.cool > li > a {
-  color: #333;
-  font-size: 1.2em;
-  /* background: rgba(0,0,0,0.2); */
-  padding: 0.5em;
-  display: inline-block;
-  margin: 1.2em;
-  border-radius: 0.3em;
 }
 
 nav ul {
@@ -34,6 +23,15 @@ nav ul {
   position: relative;
   display: flex;
   justify-content: center;
+}
+.cool > li > a {
+  color: c.$black;
+  font-size: 1.2em;
+  /* background: rgba(0,0,0,0.2); */
+  padding: 0.5em;
+  display: inline-block;
+  margin: 1.2em;
+  border-radius: 0.3em;
 }
 
 .cool > li:hover {
@@ -62,6 +60,11 @@ nav ul {
     padding: 0.2em;
   }
 }
+
+#onOffToggle {
+  display: none;
+}
+
 @include v.mq(large) {
   .nav-logo {
     padding: 2em 0;
@@ -69,6 +72,9 @@ nav ul {
   }
   nav ul {
     flex-direction: column;
+  }
+  .cool {
+    display: flex;
   }
   .cool > li {
     display: flex;
@@ -87,9 +93,7 @@ nav ul {
     justify-content: center;
     transform: none;
   }
-  .menu-item {
-    margin-bottom: 1em;
-  }
+
   .trigger-enter .dropdown {
     display: none;
   }
@@ -99,6 +103,59 @@ nav ul {
   }
   .dropdownBackground {
     display: none;
+  }
+
+  // HamburgerBtn
+
+  #menu {
+    background: c.$white;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    right: 0;
+    transition-timing-function: cubic-bezier(10, 2, 3, 1);
+    transform: translateY(-100vw);
+    top: 0;
+    z-index: 0;
+    transition: 0.5s;
+  }
+
+
+  #onOffToggle:checked ~ #menu {
+    transform: translateY(0rem);
+  }
+
+  #burger {
+    position: absolute;
+    cursor: pointer;
+    width: 2rem;
+    height: 2rem;
+    right: 1rem;
+    top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  #burger > div {
+    height: 2px;
+    background-color: c.$black;
+    transition: 0.5s;
+    z-index: 999;
+  }
+
+  #onOffToggle:checked ~ #burger > div {
+    background-color: black;
+  }
+
+  #onOffToggle:checked ~ #burger > div:nth-child(1) {
+    transform: translateY(15px) rotate(45deg);
+  }
+  #onOffToggle:checked ~ #burger > div:nth-child(2) {
+    opacity: 0;
+  }
+  #onOffToggle:checked ~ #burger > div:nth-child(3) {
+    transform: translateY(-15px) rotate(-45deg);
   }
 }
 
@@ -114,7 +171,7 @@ nav ul {
   width: 15em;
   height: 15em;
   position: absolute;
-  background: #fff;
+  background: c.$white;
   border-radius: 1em; // Kanten på dropdown
   box-shadow: 0 3em 15em rgba(50, 50, 93, 0.1), 0 1em 2em rgba(50, 50, 93, 0.15),
     0 0.3em 1em rgba(0, 0, 0, 0.1);
@@ -134,7 +191,7 @@ nav ul {
   width: 1.8em;
   height: 1.8em;
   display: block;
-  background: white;
+  background: c.$white;
   transform: translateY(-50%) rotate(45deg);
 }
 
@@ -167,11 +224,11 @@ nav ul {
   display: flex;
   flex-direction: column;
 }
-.forskel {
+.difference {
   min-width: 12em;
 }
 
 .dropdown a {
   text-decoration: none;
-  color: #028785;
+  color: var(--clr-teal-400);
 }

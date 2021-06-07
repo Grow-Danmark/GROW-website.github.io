@@ -10,7 +10,13 @@
             <g-image src="~/assets/img/logo.png" width="130" quality="100"></g-image>
             </g-link>
         </div>
-        <ul class="cool">
+         <input type="checkbox" id="onOffToggle">
+        <label id="burger" for="onOffToggle">
+            <div></div>
+            <div></div>
+            <div></div>
+        </label>
+        <ul class="cool" id="menu">
         <li>
             <g-link class="menu-item">Om GROW</g-link>
             <div class="dropdown">
@@ -44,7 +50,7 @@
             <g-link class="menu-item">Gør en forskel</g-link>
             <div class="dropdown">
                 <div class="single-list">
-                    <ul class="single-list-items forskel">
+                    <ul class="single-list-items difference">
                         <g-link to="/bliv-ambassador">Bliv GROW-ambassadør</g-link>
                         <g-link to="/bliv-samarbejdspartner">Bliv samarbejdspartner</g-link>
                         <g-link to="/stot-grow">Støt GROW</g-link>
@@ -66,41 +72,41 @@
 <script>
 export default {
   mounted: function() {
-  const triggers = document.querySelectorAll('.cool > li:nth-child(-n+3)');
-  const background  = document.querySelector('.dropdownBackground');
-  const nav  = document.querySelector('.top');
+    const triggers = document.querySelectorAll('.cool > li:nth-child(-n+3)');
+    const background  = document.querySelector('.dropdownBackground');
+    const nav  = document.querySelector('.top');
 
-  function handleEnter() {
-      if(window.innerWidth > 1024) {
-          this.classList.add('trigger-enter');
-          setTimeout(() => this.classList.contains('trigger-enter') && this.classList.add('trigger-enter-active'), 150);
-          background.classList.add('open');
-      }
-    
-        const dropdown = this.querySelector('.dropdown');
-        const dropdownCoords = dropdown.getBoundingClientRect();
-        const navCoords = nav.getBoundingClientRect();
-    
-        const coords = {
-          height: dropdownCoords.height,
-          width: dropdownCoords.width,
-          top: dropdownCoords.top - navCoords.top,
-          left: dropdownCoords.left - navCoords.left
-    
-    };
+    function handleEnter() {
+        if(window.innerWidth > 1024) {
+            this.classList.add('trigger-enter');
+            setTimeout(() => this.classList.contains('trigger-enter') && this.classList.add('trigger-enter-active'), 150);
+            background.classList.add('open');
+        }
+        
+            const dropdown = this.querySelector('.dropdown');
+            const dropdownCoords = dropdown.getBoundingClientRect();
+            const navCoords = nav.getBoundingClientRect();
+        
+            const coords = {
+            height: dropdownCoords.height,
+            width: dropdownCoords.width,
+            top: dropdownCoords.top - navCoords.top,
+            left: dropdownCoords.left - navCoords.left
+        
+        };
 
-    background.style.setProperty('width', `${coords.width}px`);
-    background.style.setProperty('height', `${coords.height}px`);
-    background.style.setProperty('transform', `translate(${coords.left}px, ${coords.top}px)`);
-  }
+        background.style.setProperty('width', `${coords.width}px`);
+        background.style.setProperty('height', `${coords.height}px`);
+        background.style.setProperty('transform', `translate(${coords.left}px, ${coords.top}px)`);
+    }
 
-  function handleLeave() {
-    this.classList.remove('trigger-enter', 'trigger-enter-active');
-    background.classList.remove('open');
-  }
+    function handleLeave() {
+        this.classList.remove('trigger-enter', 'trigger-enter-active');
+        background.classList.remove('open');
+    }
 
-  triggers.forEach(trigger => trigger.addEventListener('mouseenter', handleEnter));
-  triggers.forEach(trigger => trigger.addEventListener('mouseleave', handleLeave));
+    triggers.forEach(trigger => trigger.addEventListener('mouseenter', handleEnter));
+    triggers.forEach(trigger => trigger.addEventListener('mouseleave', handleLeave));
   }
 }
 </script>

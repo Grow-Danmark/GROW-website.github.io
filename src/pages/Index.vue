@@ -1,11 +1,7 @@
 <template>
   <Layout>
-    <main class="section">
-        <section class="container">
             index
             <article class="col-6" v-html="$page.home.content" />
-        </section>
-    </main>
   </Layout>
 </template>
 <page-query>

@@ -1,12 +1,12 @@
 <template>
   <Layout>
-    <main class="section">
+
         <section class="container">
             <h1 v-html="$page.home.title" />
             test
             <article class="col-6" v-html="$page.home.content" />
         </section>
-    </main>
+
   </Layout>
 </template>
 <page-query>

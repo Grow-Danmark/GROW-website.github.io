@@ -1,6 +1,6 @@
 <template>
 <layout>
-    <main class="section">
+
         <section class="container">
             <!-- <h1 v-html="$page.page.title" /> -->
             <!-- <div v-if="$page.page.featuredImage" class="featured-image">
@@ -8,7 +8,7 @@
             </div> -->
             <article class="col-6" v-html="$page.page.content" />
         </section>
-    </main>
+
 </layout>
 </template>
 

@@ -11,14 +11,16 @@ module.exports = function(api) {
   });
 
   api.createPages(async ({ graphql, createPage }) => {
+    let numOfPages = 20;
     // Use the Pages API here: https://gridsome.org/docs/pages-api
     const { data } = await graphql(`
-      query wordpress {
-        pages {
+      query {
+        pages(first: ${numOfPages}) {
           nodes {
             title
-            uri
-            databaseId
+            slug
+            id
+            pageId
           }
         }
       }
@@ -26,11 +28,11 @@ module.exports = function(api) {
 
     data.pages.nodes.forEach(function(node, index) {
       createPage({
-        path: `/${node.uri}`,
+        path: `/${node.slug}`,
         component: './src/templates/WP_Page.vue',
         context: {
           id: node.id,
-          uri: node.uri,
+          slug: node.slug,
           title: node.title,
           pageId: node.pageId,
         },

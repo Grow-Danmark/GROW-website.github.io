@@ -6,10 +6,6 @@
 ```bash
 # install Gridsome CLI tool
 $ npm install --global @gridsome/cli
-# create Gridsome project
-$ gridsome <project-name>
-# cd <project-name>
-$ cd <project-name>
 
 # install dependencies
 $ npm install

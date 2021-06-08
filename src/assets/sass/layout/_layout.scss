@@ -1,4 +1,6 @@
 @use '../abstracts/variables' as v;
+@use '../abstracts/colors' as c;
+
 
 .layout {
   max-width: 80em;
@@ -19,4 +21,18 @@
 
 .wp-block-columns {
   display: flex;
+}
+
+.wp-block-quote {
+  background-color: var(--clr-teal-400);
+  color: c.$white;
+  margin: 0;
+  padding: 1em;
+  p {
+    font-style: oblique;
+  }
+  cite {
+    font-style: oblique;
+    font-weight: 500;
+  }
 }

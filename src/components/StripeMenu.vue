@@ -18,7 +18,7 @@
         </label>
         <ul class="cool" id="menu">
         <li>
-            <g-link class="menu-item">Om GROW</g-link>
+            <a href="#" class="menu-item">Om GROW</a>
             <div class="dropdown">
                 <div class="dual-list">
                     <ul>
@@ -36,7 +36,7 @@
             </div>
         </li>
         <li>
-            <g-link class="menu-item">Det gør vi</g-link>
+            <a href="#" class="menu-item">Det gør vi</a>
             <div class="dropdown">
                 <div class="single-list">
                     <ul class="single-list-items">
@@ -47,7 +47,7 @@
             </div>
         </li>
         <li>
-            <g-link class="menu-item">Gør en forskel</g-link>
+            <a href="#" class="menu-item">Gør en forskel</a>
             <div class="dropdown">
                 <div class="single-list">
                     <ul class="single-list-items difference">
@@ -108,6 +108,7 @@ export default {
     triggers.forEach(trigger => trigger.addEventListener('mouseenter', handleEnter));
     triggers.forEach(trigger => trigger.addEventListener('mouseleave', handleLeave));
   }
+  
 }
 </script>
 

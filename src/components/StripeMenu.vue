@@ -17,6 +17,11 @@
             <div></div>
         </label>
         <ul class="cool" id="menu">
+        <div class="nav-logo-mobile">
+            <g-link to="/">
+            <g-image src="~/assets/img/logo.png" width="105" quality="100"></g-image>
+        </g-link>
+        </div>
         <li>
             <a href="#" class="menu-item">Om GROW</a>
             <div class="dropdown">
@@ -125,6 +130,9 @@ nav {
   align-items: center;
   justify-content: start;
 }
+.nav-logo-mobile {
+    display: none;
+}
 
 nav ul {
   list-style: none;
@@ -185,6 +193,11 @@ nav ul {
     padding: 2em 0;
     justify-content: center;
   }
+  .nav-logo-mobile {
+      display: block;
+      margin: 1em auto 0 auto;
+
+  }
   nav ul {
     flex-direction: column;
   }
@@ -239,6 +252,7 @@ nav ul {
   #onOffToggle:checked ~ #menu {
     transform: translateY(0rem);
   }
+
 
   #burger {
     position: absolute;

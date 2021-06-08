@@ -1,7 +1,6 @@
 @use '../abstracts/variables' as v;
 @use '../abstracts/colors' as c;
 
-
 .layout {
   max-width: 80em;
   margin: 0 auto;
@@ -21,6 +20,10 @@
 
 .wp-block-columns {
   display: flex;
+  flex-wrap: wrap;
+}
+.wp-block-column {
+  padding: 0;
 }
 
 .wp-block-quote {

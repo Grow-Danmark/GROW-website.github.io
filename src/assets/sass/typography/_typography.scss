@@ -1,5 +1,7 @@
-@use '../abstracts/fonts' as f;
+@use '../abstracts/typescale' as ts;
 @use '../abstracts/colors' as c;
+@use '../typography/fonts' as t;
+
 
 html {
   font-size: 100%; //16px or 1rem unit

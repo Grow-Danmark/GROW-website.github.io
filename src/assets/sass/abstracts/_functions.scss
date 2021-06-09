@@ -1,6 +1,6 @@
 @use '../abstracts/variables' as v;
 @use '../abstracts/colors' as c;
-@use '../abstracts/fonts' as f;
+@use '../abstracts/typescale' as ts;
 
 .row {
   display: flex;

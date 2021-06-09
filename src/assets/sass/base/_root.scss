@@ -1,5 +1,5 @@
 @use '../abstracts/variables' as v;
-@use '../abstracts/fonts' as f;
+@use '../abstracts/typescale' as ts;
 @use '../abstracts/colors' as c;
 
 //Two for each loops, looping through colors map and the maps inside that
@@ -12,7 +12,7 @@
   }
   // setting font sizes with the same principle as above
   // but with small and large screen sizes though an if-else statement
-  @each $screen-size, $font-size in f.$type-scale {
+  @each $screen-size, $font-size in ts.$type-scale {
     @if $screen-size == small {
       @each $size, $value in $font-size {
         --fs-#{$size}: #{$value};

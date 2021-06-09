@@ -1,14 +1,6 @@
 <template>
 <layout>
-
-        <section class="container">
-            <!-- <h1 v-html="$page.page.title" /> -->
-            <!-- <div v-if="$page.page.featuredImage" class="featured-image">
-                <img src="$page.page.featuredImage.sourceUrl" />
-            </div> -->
-            <article class="col-6" v-html="$page.page.content" />
-        </section>
-
+  <main v-html="$page.page.content" /> 
 </layout>
 </template>
 

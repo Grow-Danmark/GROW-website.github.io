@@ -2,9 +2,9 @@
   <div>
     <AppHeader />
       <transition name="fade" appear>
-        <main class="layout"> <!-- a wrapper for slot is needed -->
+         <!-- a wrapper for slot is needed -->
           <slot /> <!-- the content -->
-        </main>
+        
       </transition>
     <AppFooter />
   </div>

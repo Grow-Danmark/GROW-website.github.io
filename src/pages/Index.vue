@@ -1,6 +1,6 @@
 <template>
   <Layout>
-            index
+            <g-image :src="$page.home.featuredImage.node.sourceUrl" quality="100"></g-image>
             <article class="col-6" v-html="$page.home.content" />
   </Layout>
 </template>
@@ -10,6 +10,11 @@ query home {
         title
         content
         id
+        featuredImage {
+    	  node {
+    	    sourceUrl
+    	  }
+    	}
 	},
     generalSettings {
     title
@@ -29,6 +34,9 @@ export default {
       ]
       // etc...
     }
+  },
+  methods: {
+    
   }
 }
 </script>

@@ -4,10 +4,13 @@
   "scripts": {
     "develop": "gridsome develop",
     "explore": "gridsome explore",
-    "build": "gridsome build"
+    "build": "gridsome build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"  
   },
   "dependencies": {
     "@gridsome/source-wordpress": "^0.5.3",
+    "gh-pages": "^3.2.0",
     "gridsome": "^0.7.0",
     "gridsome-plugin-modal": "^0.1.1",
     "gridsome-source-graphql": "^1.0.2",

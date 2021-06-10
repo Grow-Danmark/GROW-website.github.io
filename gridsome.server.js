@@ -38,23 +38,23 @@ module.exports = function(api) {
           }
         }
       }
-    }`
+    }`;
     const teamQuery = `{
       page(id: "${teamID}") {
         title
         slug
       }
-    }`
+    }`;
 
-    const queryResults = await graphql(query)
-    const teamResults = await graphql(teamQuery)
+    const queryResults = await graphql(query);
+    const teamResults = await graphql(teamQuery);
 
-    let pages = queryResults.data.pages.edges.map(edge => edge.node)
-    let team = teamResults.data.page
+    let pages = queryResults.data.pages.edges.map((edge) => edge.node);
+    let team = teamResults.data.page;
 
-    console.log(team)
+    console.log(team);
 
-    pages.forEach(page => {
+    pages.forEach((page) => {
       createPage({
         path: `/${page.slug}`,
         component: './src/templates/WP_Page.vue',
@@ -64,7 +64,7 @@ module.exports = function(api) {
           title: page.title,
           pageId: page.databaseId,
           content: page.content,
-        }
+        },
       });
     }),
       createPage({
@@ -73,9 +73,7 @@ module.exports = function(api) {
         context: {
           slug: team.slug,
           title: team.title,
-        }
+        },
       });
-    
-
-    });
+  });
 };

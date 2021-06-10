@@ -8,7 +8,7 @@
 </template>
 <page-query>
 query home {
-	home: pageBy(uri: "grow-teamet") {
+	home: pageBy(uri: "grow-team") {
         title
         id
 	},

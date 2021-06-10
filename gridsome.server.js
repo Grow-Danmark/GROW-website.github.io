@@ -11,7 +11,7 @@ module.exports = function(api) {
   });
 
   api.createPages(async ({ graphql, createPage }) => {
-    const numOfPages = 20;
+    const numOfPages = 30;
     const teamID = 'cG9zdDo1OA==';
     // Use the Pages API here: https://gridsome.org/docs/pages-api
     // const { data } = await graphql(`
@@ -66,14 +66,15 @@ module.exports = function(api) {
           content: page.content,
         },
       });
-    }),
-      createPage({
-        path: `/${team.slug}`,
-        component: './src/templates/GrowTeamet.vue',
-        context: {
-          slug: team.slug,
-          title: team.title,
-        },
-      });
+    })
+    // ,
+      // createPage({
+      //   path: `/${team.slug}`,
+      //   component: './src/templates/GrowTeamet.vue',
+      //   context: {
+      //     slug: team.slug,
+      //     title: team.title,
+      //   },
+      // });
   });
 };

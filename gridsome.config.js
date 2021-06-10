@@ -21,10 +21,10 @@ module.exports = {
       },
       createPages: {
         // include or exclude, default is include
-          approach: 'exclude',
-          //an array of page slugs to include or exclude, ex. ['about', 'our-team']
-          list: ['grow-teamet']
-        }
+        approach: 'exclude',
+        //an array of page slugs to include or exclude, ex. ['about', 'our-team']
+        list: ['grow-teamet'],
+      },
     },
   ],
 };

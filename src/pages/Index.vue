@@ -1,9 +1,11 @@
 <template>
   <Layout>
-     <HeroComponent />
-   <main v-html="$page.home.content" />
+  <!-- <main v-html="$page.home.content" /> -->
+  <HeroComponent></HeroComponent>
+  <HelpCards></HelpCards>
   </Layout>
 </template>
+
 <page-query>
 query home {
 	home: pageBy(uri: "hjem") {
@@ -18,11 +20,13 @@ query home {
 </page-query>
 
 <script>
-import HeroComponent from '~/components/HeroComponent.vue'
+import HelpCards from '~/components/HelpCards.vue'
+import HeroComponent from '../components/HeroComponent.vue'
 
 export default {
   components: {
-    HeroComponent
+  HelpCards,
+  HeroComponent,
   },
   name: 'home',
   metaInfo() {

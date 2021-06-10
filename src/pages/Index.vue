@@ -3,6 +3,8 @@
   <!-- <main v-html="$page.home.content" /> -->
   <HeroComponent></HeroComponent>
   <HelpCards></HelpCards>
+  <ImageText></ImageText>
+
   </Layout>
 </template>
 
@@ -22,11 +24,14 @@ query home {
 <script>
 import HelpCards from '~/components/HelpCards.vue'
 import HeroComponent from '../components/HeroComponent.vue'
+import ImageText from '../components/ImageText.vue'
+
 
 export default {
   components: {
   HelpCards,
   HeroComponent,
+  ImageText,
   },
   name: 'home',
   metaInfo() {

@@ -13,30 +13,59 @@ module.exports = function(api) {
   api.createPages(async ({ graphql, createPage }) => {
     let numOfPages = 20;
     // Use the Pages API here: https://gridsome.org/docs/pages-api
-    const { data } = await graphql(`
-      query {
-        pages(first: ${numOfPages}) {
-          nodes {
+    // const { data } = await graphql(`
+    //   query {
+    //     pages(first: ${numOfPages}) {
+    //       nodes {
+    //         title
+    //         slug
+    //         id
+    //         pageId
+    //       }
+    //     }
+    //   }
+    // `);
+    const query = `{
+      pages(first: ${numOfPages}) {
+        edges {
+          node {
             title
             slug
             id
-            pageId
+            databaseId
+            content
           }
         }
       }
-    `);
+    }`
 
-    data.pages.nodes.forEach(function(node, index) {
+    const queryResults = await graphql(query)
+
+    let pages = queryResults.data.pages.edges.map(edge => edge.node)
+
+    pages.forEach(page => {
       createPage({
-        path: `/${node.slug}`,
+        path: `/${page.slug}`,
         component: './src/templates/WP_Page.vue',
         context: {
-          id: node.id,
-          slug: node.slug,
-          title: node.title,
-          pageId: node.pageId,
+          id: page.id,
+          slug: page.slug,
+          title: page.title,
+          pageId: page.databaseId,
+          content: page.content,
         },
       });
+    })
+    // data.pages.nodes.forEach(function(node, index) {
+      // createPage({
+      //   path: `/${node.slug}`,
+      //   component: './src/templates/WP_Page.vue',
+      //   context: {
+      //     id: node.id,
+      //     slug: node.slug,
+      //     title: node.title,
+      //     pageId: node.pageId,
+      //   },
+      // });
     });
-  });
 };

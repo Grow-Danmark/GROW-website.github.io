@@ -11,7 +11,8 @@ module.exports = function(api) {
   });
 
   api.createPages(async ({ graphql, createPage }) => {
-    let numOfPages = 20;
+    const numOfPages = 20;
+    const teamID = 'cG9zdDo1OA==';
     // Use the Pages API here: https://gridsome.org/docs/pages-api
     // const { data } = await graphql(`
     //   query {
@@ -38,10 +39,20 @@ module.exports = function(api) {
         }
       }
     }`
+    const teamQuery = `{
+      page(id: "${teamID}") {
+        title
+        slug
+      }
+    }`
 
     const queryResults = await graphql(query)
+    const teamResults = await graphql(teamQuery)
 
     let pages = queryResults.data.pages.edges.map(edge => edge.node)
+    let team = teamResults.data.page
+
+    console.log(team)
 
     pages.forEach(page => {
       createPage({
@@ -53,19 +64,18 @@ module.exports = function(api) {
           title: page.title,
           pageId: page.databaseId,
           content: page.content,
-        },
+        }
       });
-    })
-    // data.pages.nodes.forEach(function(node, index) {
-      // createPage({
-      //   path: `/${node.slug}`,
-      //   component: './src/templates/WP_Page.vue',
-      //   context: {
-      //     id: node.id,
-      //     slug: node.slug,
-      //     title: node.title,
-      //     pageId: node.pageId,
-      //   },
-      // });
+    }),
+      createPage({
+        path: `/${team.slug}`,
+        component: './src/templates/GrowTeamet.vue',
+        context: {
+          slug: team.slug,
+          title: team.title,
+        }
+      });
+    
+
     });
 };

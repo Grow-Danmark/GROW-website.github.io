@@ -1,6 +1,7 @@
-const c1 = () => import(/* webpackChunkName: "page--src--templates--wp-page-vue" */ "/Users/madsnyborg/Documents/GitHub/GROW-website/src/templates/WP_Page.vue")
-const c2 = () => import(/* webpackChunkName: "page--node-modules--gridsome--app--pages--404-vue" */ "/Users/madsnyborg/Documents/GitHub/GROW-website/node_modules/gridsome/app/pages/404.vue")
-const c3 = () => import(/* webpackChunkName: "page--src--pages--index-vue" */ "/Users/madsnyborg/Documents/GitHub/GROW-website/src/pages/Index.vue")
+const c1 = () => import(/* webpackChunkName: "page--src--templates--wp-page-vue" */ "/Users/scottlind/Documents/GitHub/Grow-website/src/templates/WP_Page.vue")
+const c2 = () => import(/* webpackChunkName: "page--src--templates--grow-teamet-vue" */ "/Users/scottlind/Documents/GitHub/Grow-website/src/templates/GrowTeamet.vue")
+const c3 = () => import(/* webpackChunkName: "page--node-modules--gridsome--app--pages--404-vue" */ "/Users/scottlind/Documents/GitHub/Grow-website/node_modules/gridsome/app/pages/404.vue")
+const c4 = () => import(/* webpackChunkName: "page--src--pages--index-vue" */ "/Users/scottlind/Documents/GitHub/Grow-website/src/pages/Index.vue")
 
 export default [
   {
@@ -37,7 +38,7 @@ export default [
   },
   {
     path: "/grow-teamet/",
-    component: c1
+    component: c2
   },
   {
     path: "/hjem/",
@@ -62,16 +63,16 @@ export default [
   {
     name: "404",
     path: "/404/",
-    component: c2
+    component: c3
   },
   {
     name: "home",
     path: "/",
-    component: c3
+    component: c4
   },
   {
     name: "*",
     path: "*",
-    component: c2
+    component: c3
   }
 ]

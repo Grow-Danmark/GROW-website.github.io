@@ -1,7 +1,7 @@
 /node_modules/gridsome/*
 /node_modules/
 .cache
-/temp/
+src/.temp/*
 *.log
 wp-config.php
 wp-content/advanced-cache.php
@@ -21,3 +21,4 @@ wp-content/plugins/hello.php
 /sitemap.xml
 /sitemap.xml.gz
 
+src/.temp/now.js

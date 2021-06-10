@@ -1,7 +1,7 @@
 export default {
   "trailingSlash": true,
   "pathPrefix": "",
-  "titleTemplate": "%s - GROW-website",
+  "titleTemplate": "%s - Grow-website",
   "siteUrl": "",
   "version": "0.7.23",
   "catchLinks": true

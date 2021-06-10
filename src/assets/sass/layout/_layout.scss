@@ -14,7 +14,9 @@ figure {
   margin: 0 auto;
   padding: 0 2em;
 }
-
+.centered {
+  margin: 0 auto;
+}
 @include v.mq(xlarge) {
   .layout {
     max-width: xlarge;

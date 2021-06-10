@@ -1,5 +1,6 @@
 <template>
   <Layout>
+     <HeroComponent />
    <main v-html="$page.home.content" />
   </Layout>
 </template>
@@ -17,7 +18,12 @@ query home {
 </page-query>
 
 <script>
+import HeroComponent from '~/components/HeroComponent.vue'
+
 export default {
+  components: {
+    HeroComponent
+  },
   name: 'home',
   metaInfo() {
     return {

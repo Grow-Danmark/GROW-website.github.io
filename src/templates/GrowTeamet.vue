@@ -1,8 +1,7 @@
 <template>
   <Layout>
-<main>Test
-  LOL VIRKER DET HER NUUUU
- <TeamCard />
+<main>
+  <TeamCard />
 </main>
     <!-- <main v-html="$page.home.content" /> -->
   </Layout>
@@ -11,7 +10,6 @@
 query home {
 	home: pageBy(uri: "grow-teamet") {
         title
-
         id
 	},
     generalSettings {
@@ -27,7 +25,7 @@ import TeamCard from '~/components/TeamCard.vue'
 
 export default {
   components: {
-    TeamCard
+    TeamCard, HeroComponent
   },
   name: 'Grow Teamet',
   metaInfo() {

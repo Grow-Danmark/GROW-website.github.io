@@ -36,10 +36,10 @@ export default {
   name: 'home',
   metaInfo() {
     return {
-      title: this.$page.generalSettings.title,
-      titleTemplate: this.$page.generalSettings.title + ' | ' + this.$page.page.title,
+      title: 'GROW',
+      titleTemplate: this.title + ' | ' + 'Hjem',
       meta: [
-        { name: 'description', content: this.$page.title }
+        { name: 'description', content: this.$page.home.title }
       ]
       // etc...
     }

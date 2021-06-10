@@ -66,15 +66,15 @@ module.exports = function(api) {
           content: page.content,
         },
       });
-    })
+    });
     // ,
-      // createPage({
-      //   path: `/${team.slug}`,
-      //   component: './src/templates/GrowTeamet.vue',
-      //   context: {
-      //     slug: team.slug,
-      //     title: team.title,
-      //   },
-      // });
+    // createPage({
+    //   path: `/${team.slug}`,
+    //   component: './src/templates/GrowTeamet.vue',
+    //   context: {
+    //     slug: team.slug,
+    //     title: team.title,
+    //   },
+    // });
   });
 };

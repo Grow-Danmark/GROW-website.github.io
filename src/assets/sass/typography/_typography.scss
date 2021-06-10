@@ -37,10 +37,10 @@ p {
   max-width: 55ch; // 1 ch = 1 o character, so roughly 70 characters max
 }
 
-@each $color, $shades in c.$colors {
-  @each $shade, $value in $shades {
-    .text-#{$color}-#{$shade} {
-      color: $value;
-    }
-  }
-}
+// @each $color, $shades in c.$colors {
+//   @each $shade, $value in $shades {
+//     .text-#{$color}-#{$shade} {
+//       color: $value;
+//     }
+//   }
+// }

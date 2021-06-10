@@ -35,8 +35,5 @@ export default {
 
 
 <style>
-.row > div {
-    background-color: lightblue;
-    border: 1px solid black;
-}
+
 </style>

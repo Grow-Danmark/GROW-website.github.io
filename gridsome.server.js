@@ -64,6 +64,7 @@ module.exports = function(api) {
           title: page.title,
           pageId: page.databaseId,
           content: page.content,
+          heroSection: page.heroSection,
         }
       });
     }),

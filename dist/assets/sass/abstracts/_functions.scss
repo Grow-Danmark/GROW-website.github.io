@@ -1,0 +1,30 @@
+@use '../abstracts/variables' as v;
+@use '../abstracts/colors' as c;
+@use '../abstracts/typescale' as ts;
+
+// .row {
+//   display: flex;
+//   flex-wrap: wrap;
+// }
+
+// // Columns for the gris
+// $columns: 12;
+
+// [class^='col-'] {
+//   flex-basis: 100%;
+// }
+
+// @media (min-width: 48em) {
+//   //x number column grid with option for offset columns
+//   @for $i from 1 through $columns {
+//     .col-#{$i} {
+//       flex: 0 0 (100% / ($columns / $i));
+//     }
+
+//     .col-offset-#{$i} {
+//       margin-left: 100% / ($columns / $i);
+//     }
+//   }
+// }
+
+

@@ -1,0 +1,46 @@
+@use '../abstracts/typescale' as ts;
+@use '../abstracts/colors' as c;
+@use '../typography/fonts' as t;
+
+
+html {
+  font-size: 100%; //16px or 1rem unit
+}
+body {
+  // font-family: 'Poppins', sans-serif;
+  font-weight: 00;
+  line-height: 1.75;
+}
+
+h1 {
+  font-size: var(--fs-900);
+  margin: 0.6rem 0;
+}
+h2 {
+  font-size: var(--fs-800);
+  margin: 0.6rem 0;
+}
+h3 {
+  font-size: var(--fs-700);
+  margin: 0.6rem 0;
+}
+h4 {
+  font-size: var(--fs-600);
+  margin: 0.6rem 0;
+}
+h5 {
+  font-size: var(--fs-500);
+  margin: 0.6rem 0;
+}
+p {
+  font-size: var(--fs-400);
+  max-width: 55ch; // 1 ch = 1 o character, so roughly 70 characters max
+}
+
+// @each $color, $shades in c.$colors {
+//   @each $shade, $value in $shades {
+//     .text-#{$color}-#{$shade} {
+//       color: $value;
+//     }
+//   }
+// }

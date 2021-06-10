@@ -1,0 +1,234 @@
+// @use '../abstracts/colors' as c;
+// @use '../abstracts/variables' as v;
+
+// nav {
+//   position: relative;
+//   perspective: 600px;
+// }
+// .nav-logo {
+//   display: flex;
+//   align-items: center;
+//   justify-content: start;
+// }
+
+// nav ul {
+//   list-style: none;
+//   margin: 0;
+//   padding: 0;
+//   display: flex;
+//   justify-content: space-around;
+// }
+
+// .cool > li {
+//   position: relative;
+//   display: flex;
+//   justify-content: center;
+// }
+// .cool > li > a {
+//   color: c.$black;
+//   font-size: 1.2em;
+//   /* background: rgba(0,0,0,0.2); */
+//   padding: 0.5em;
+//   display: inline-block;
+//   margin: 1.2em;
+//   border-radius: 0.3em;
+// }
+
+// .cool > li:hover {
+//   // filter: drop-shadow(0 .5rem 1rem hsla(179, 97%, 27%, 1));
+// }
+
+// .menu-item {
+//   font-weight: 600;
+// }
+
+// .dropdown {
+//   opacity: 0;
+//   position: absolute;
+//   overflow: hidden;
+//   padding: 1em;
+//   top: 0em;
+//   /* Positionen på drowdown-elementet */
+//   border-radius: 2em;
+//   transition: all 0.5s;
+//   transform: translateY(100px);
+//   will-change: opacity;
+//   display: none;
+
+//   a {
+//     display: block;
+//     padding: 0.2em;
+//   }
+// }
+
+// #onOffToggle {
+//   display: none;
+// }
+
+// @include v.mq(large) {
+//   .nav-logo {
+//     padding: 2em 0;
+//     justify-content: center;
+//   }
+//   nav ul {
+//     flex-direction: column;
+//   }
+//   .cool {
+//     display: flex;
+//   }
+//   .cool > li {
+//     display: flex;
+//     flex-direction: column;
+//     height: fit-content;
+//     a {
+//       margin: 0 auto 0 auto;
+//       padding: 0;
+//     }
+//   }
+//   .dropdown {
+//     display: flex;
+//     opacity: 1;
+//     padding: 0;
+//     position: relative;
+//     justify-content: center;
+//     transform: none;
+//   }
+
+//   .trigger-enter .dropdown {
+//     display: none;
+//   }
+
+//   .trigger-enter-active .dropdown {
+//     opacity: 0;
+//   }
+//   .dropdownBackground {
+//     display: none;
+//   }
+
+//   // HamburgerBtn
+
+//   #menu {
+//     background: c.$white;
+//     width: 100%;
+//     height: 100vh;
+//     position: fixed;
+//     right: 0;
+//     transition-timing-function: cubic-bezier(10, 2, 3, 1);
+//     transform: translateY(-100%);
+//     top: 0;
+//     z-index: 0;
+//     transition: 0.5s;
+//   }
+
+
+//   #onOffToggle:checked ~ #menu {
+//     transform: translateY(0rem);
+//   }
+
+//   #burger {
+//     position: absolute;
+//     cursor: pointer;
+//     width: 2rem;
+//     height: 2rem;
+//     right: 1rem;
+//     top: 1rem;
+//     display: flex;
+//     justify-content: space-between;
+//     flex-direction: column;
+//   }
+
+//   #burger > div {
+//     height: 2px;
+//     background-color: c.$black;
+//     transition: 0.5s;
+//     z-index: 999;
+//   }
+
+//   #onOffToggle:checked ~ #burger > div {
+//     background-color: black;
+//   }
+
+//   #onOffToggle:checked ~ #burger > div:nth-child(1) {
+//     transform: translateY(15px) rotate(45deg);
+//   }
+//   #onOffToggle:checked ~ #burger > div:nth-child(2) {
+//     opacity: 0;
+//   }
+//   #onOffToggle:checked ~ #burger > div:nth-child(3) {
+//     transform: translateY(-15px) rotate(-45deg);
+//   }
+// }
+
+// .trigger-enter .dropdown {
+//   display: block;
+// }
+
+// .trigger-enter-active .dropdown {
+//   opacity: 1;
+// }
+
+// .dropdownBackground {
+//   width: 15em;
+//   height: 15em;
+//   position: absolute;
+//   background: c.$white;
+//   border-radius: 1em; // Kanten på dropdown
+//   box-shadow: 0 3em 15em rgba(50, 50, 93, 0.1), 0 1em 2em rgba(50, 50, 93, 0.15),
+//     0 0.3em 1em rgba(0, 0, 0, 0.1);
+//   transition: all 0.3s, opacity 0.1s, transform 0.2s;
+//   transform-origin: 50% 0;
+//   display: flex;
+//   justify-content: center;
+//   opacity: 0;
+// }
+
+// .dropdownBackground.open {
+//   opacity: 1;
+// }
+
+// .arrow {
+//   position: absolute;
+//   width: 1.8em;
+//   height: 1.8em;
+//   display: block;
+//   background: c.$white;
+//   transform: translateY(-50%) rotate(45deg);
+// }
+
+// .dual-list {
+//   min-width: 30em;
+//   display: flex;
+//   align-items: baseline;
+//   justify-content: space-around;
+
+//   span {
+//     font-size: 1.2em;
+//     margin: 0 0 0.5em 0;
+//   }
+//   ul {
+//     display: flex;
+//     flex-direction: column;
+//   }
+//   ul:first-child {
+//     margin-right: 2em;
+//   }
+//   a {
+//     padding: 0.2em;
+//   }
+// }
+// .single-list {
+//   min-width: 10em;
+// }
+
+// .single-list-items {
+//   display: flex;
+//   flex-direction: column;
+// }
+// .difference {
+//   min-width: 12em;
+// }
+
+// .dropdown a {
+//   text-decoration: none;
+//   color: var(--clr-teal-400);
+// }

@@ -1,13 +1,17 @@
 <template>
   <Layout>
-   <main v-html="$page.home.content" />
+<main>Test
+  LOL VIRKER DET HER NUUUU
+ <TeamCard />
+</main>
+    <!-- <main v-html="$page.home.content" /> -->
   </Layout>
 </template>
 <page-query>
 query home {
-	home: pageBy(uri: "hjem") {
+	home: pageBy(uri: "grow-teamet") {
         title
-        content
+
         id
 	},
     generalSettings {
@@ -16,9 +20,16 @@ query home {
 }
 </page-query>
 
+
+
 <script>
+import TeamCard from '~/components/TeamCard.vue'
+
 export default {
-  name: 'home',
+  components: {
+    TeamCard
+  },
+  name: 'Grow Teamet',
   metaInfo() {
     return {
       title: this.$page.generalSettings.title,

@@ -1,7 +1,7 @@
 <template>
   <section class="section-img-text row--reversed">
     <div class="section-image-container">
-      <img :src="$static.page.heroSection.blobbg.sourceUrl" :alt="$static.page.heroSection.heroImg.altText" class="alpha-target">
+      <img :src="$static.page.heroSection.heroImg.sourceUrl" :alt="$static.page.heroSection.heroImg.altText" class="alpha-target">
     </div>
     <div class="section-text-container">
     <h2>{{ $static.page.heroSection.heading }}</h2>
@@ -28,9 +28,6 @@ query hero {
       heroImg {
         altText
         sourceUrl(size: LARGE)
-      }
-      blobbg{
-        sourceUrl(size:LARGE)
       }
     }
   }

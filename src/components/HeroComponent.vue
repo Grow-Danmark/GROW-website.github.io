@@ -47,15 +47,10 @@ export default {
     flex-direction: row;
 }
 .hero-section img { 
-    width: 80%;
+  width: 100%;
  }
 .hero-section h1 {
-   max-width: 16ch; 
-}
-
-.hero-text-container p:nth-child(4) {
-    color: grey;
-    width: 50%;
+   max-width: 19ch; 
 }
 
 .hero-text-container{width: 50%;}

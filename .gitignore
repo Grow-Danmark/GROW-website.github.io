@@ -25,3 +25,7 @@ wp-content/plugins/hello.php
 /sitemap.xml.gz
 
 src/.temp/now.js
+src/.temp/routes.js
+src/.temp/now.js
+src/.temp/icons.js
+src/.temp/config.js

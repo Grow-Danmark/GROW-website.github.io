@@ -47,7 +47,7 @@ export default {
 
 <style lang="scss">
 .hero-section {
-    padding: 5% 15%;
+    padding: 5% 10%;
     margin: 0 auto;
     display: flex;
     flex-direction: row;
@@ -58,7 +58,6 @@ export default {
 .hero-section h1 {
    max-width: 19ch; 
 }
-
 .hero-text-container{width: 50%;}
 
 .hero-text-container > p:nth-child(1){

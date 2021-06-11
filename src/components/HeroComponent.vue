@@ -53,7 +53,9 @@ export default {
 .hero-section img { 
     width: 80%;
  }
-.hero-section h1 {font-weight: 300;}
+.hero-section h1 {
+   max-width: 16ch; 
+}
 
 .hero-text-container p:nth-child(4) {
     color: grey;

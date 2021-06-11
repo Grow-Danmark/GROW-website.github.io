@@ -26,6 +26,7 @@ main {
 .wp-block-columns {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-around;
   width: 100%;
   margin: 0;
 }
@@ -51,7 +52,6 @@ figure img {
   width: 95%;
   height: auto;
   object-fit: contain;
-  max-width: 10000px;
 }
 
 .valueIcon {
@@ -66,6 +66,14 @@ figure img {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.listStyleLogo ul {
+  list-style-image: 
+  url('/assets/img/listicons/logoGreen1.png'),
+  url('/assets/img/backgrounds/logoBlue2.png'),
+  url('/assets/img/backgrounds/logoYellow3.png'),
+  url('/assets/img/backgrounds/logoRed4.png');
 }
 
 .wp-block-quote {

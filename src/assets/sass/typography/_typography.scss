@@ -17,6 +17,7 @@ body {
 h1 {
   font-size: var(--fs-900);
   margin: 0.6rem 0;
+  font-weight: 400;
 }
 h2 {
   font-size: var(--fs-800);
@@ -36,7 +37,7 @@ h5 {
 }
 p {
   font-size: var(--fs-400);
-  max-width: 55ch; // 1 ch = 1 o character, so roughly 70 characters max
+  max-width: 55ch; 
   margin: 0;
 }
 

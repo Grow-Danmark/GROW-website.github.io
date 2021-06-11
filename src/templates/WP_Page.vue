@@ -25,7 +25,7 @@ export default {
       title: this.$page.page.title,
       titleTemplate: this.$page.generalSettings.title + ' | ' + this.$page.page.title,
       meta: [
-        { name: 'description', content: this.$page.title }
+        { name: 'description', content: this.$page.generalSettings.title + ' | ' + this.$page.page.title }
       ]
       // etc...
     }

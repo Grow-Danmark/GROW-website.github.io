@@ -1,11 +1,10 @@
 @use '../sass/base/normalize';
 @use '../sass/typography/fonts';
+@use '../sass/abstracts/functions';
 @use '../sass/base/root';
 @use '../sass/base/body';
-@use '../sass/abstracts/links';
 @use '../sass/abstracts/colors';
 @use '../sass/abstracts/variables';
-@use '../sass/abstracts/functions';
 @use '../sass/layout/layout';
 @use '../sass/layout/wpClasses';
 @use '../sass/typography/typography';

@@ -18,7 +18,7 @@
         --fs-#{$size}: #{$value};
       }
     } @else {
-      @include v.mq(medium) {
+      @media screen and(min-width: large) {
         @each $size, $value in $font-size {
           --fs-#{$size}: #{$value};
         }

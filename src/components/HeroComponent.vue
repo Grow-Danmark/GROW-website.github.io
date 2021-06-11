@@ -46,8 +46,10 @@ export default {
 </script>
 
 <style lang="scss">
+// @use 'assets/sass/abstracts/variables';
+
 .hero-section {
-    padding: 5% 10%;
+    padding: 3em;
     margin: 0 auto;
     display: flex;
     flex-direction: row;
@@ -58,7 +60,13 @@ export default {
 .hero-section h1 {
    max-width: 19ch; 
 }
-.hero-text-container{width: 50%;}
+.hero-text-container{
+  margin: 3em 0;
+  width: 50%;
+}
+// @include mq(small) {
+  
+// }
 
 .hero-text-container > p:nth-child(1){
     color: var(--clr-teal-400); 

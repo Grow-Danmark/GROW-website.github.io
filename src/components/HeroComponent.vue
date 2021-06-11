@@ -4,10 +4,16 @@
     <p class="heroText">{{ $static.page.heroSection.welcome }}</p>
     <h1>{{ $static.page.heroSection.heading }}</h1>
     <p>{{ $static.page.heroSection.heroText }}</p>
+    
+    
+      <button class="btn--large">Læs mere</button>
+    
     </div>
+
     <div class="blob">
       <img :src="$static.page.heroSection.heroImg.sourceUrl" :alt="$static.page.heroSection.heroImg.altText" class="hero-image alpha-target">
     </div>
+
 </section>
 </template>
 

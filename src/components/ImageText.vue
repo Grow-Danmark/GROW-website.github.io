@@ -15,7 +15,7 @@
       <li>Balance</li>
     </ul>
 
-    <button>Læs mere her</button>
+    <button class="btn--small">Læs mere her</button>
     </div>
 </section>
 </template>

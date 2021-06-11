@@ -22,7 +22,7 @@
     <h4 class="help-text">Søge nysgerrigt</h4>
   </div>
  </div>
-  <button class="btn--teal">Få nu hjælp</button>
+  <button class="btn--medium row">Få nu hjælp</button>
 </section>
 </template>
 
@@ -34,15 +34,8 @@ export default {
 </script>
 
 <style lang="scss">
-@use 'src/assets/sass/abstracts/_variables.scss' as v;
 .help-section {
   margin: 0 auto;
-  button {
-    padding: 1em 2em;
-    background-color: var(--clr-teal-400);
-    display: block;
-    margin: 0 auto;
-  }
 }
 .headers {
   display: flex;

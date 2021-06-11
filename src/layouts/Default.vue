@@ -1,11 +1,13 @@
 <template>
   <div>
     <AppHeader />
-      <!-- <transition name="fade" appear> -->
+      <transition name="fade" appear> -->
          <!-- a wrapper for slot is needed -->
+         <main>
           <slot /> <!-- the content -->
+         </main>
         
-      <!-- </transition> -->
+      </transition>
     <AppFooter />
   </div>
 </template>
@@ -33,11 +35,11 @@ export default {
 </script>
 
 <style>
-/* .fade-enter-active {
+.fade-enter-active {
   transition: opacity .5s;
 }
 
 .fade-enter {
   opacity: 0;
-} */
+}
 </style>

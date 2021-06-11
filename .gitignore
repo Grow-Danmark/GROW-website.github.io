@@ -4,7 +4,7 @@
 /src/.temp/*
 src/.temp/now.js
 /src/.temp/now.js
-
+/dist/
 *.log
 wp-config.php
 wp-content/advanced-cache.php

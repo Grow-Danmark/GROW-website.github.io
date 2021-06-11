@@ -3,6 +3,10 @@
   <!-- <main v-html="$page.home.content" /> -->
   <HeroComponent></HeroComponent>
   <HelpCards></HelpCards>
+  <ImageText></ImageText>
+  <ThreeCards></ThreeCards>
+  <MeetTheTeam></MeetTheTeam>
+
   </Layout>
 </template>
 
@@ -22,19 +26,25 @@ query home {
 <script>
 import HelpCards from '~/components/HelpCards.vue'
 import HeroComponent from '../components/HeroComponent.vue'
+import ImageText from '../components/ImageText.vue'
+import ThreeCards from '../components/ThreeCards.vue'
+import MeetTheTeam from '../components/MeetTheTeam.vue'
 
 export default {
   components: {
   HelpCards,
   HeroComponent,
+  ImageText,
+  ThreeCards,
+  MeetTheTeam,
   },
   name: 'home',
   metaInfo() {
     return {
-      title: this.$page.generalSettings.title,
-      titleTemplate: this.$page.generalSettings.title + ' | ' + this.$page.page.title,
+      title: 'GROW',
+      titleTemplate: this.title + ' | ' + 'Hjem',
       meta: [
-        { name: 'description', content: this.$page.title }
+        { name: 'description', content: this.$page.home.title }
       ]
       // etc...
     }
@@ -44,7 +54,6 @@ export default {
   }
 }
 </script>
-
 
 <style>
 

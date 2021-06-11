@@ -1,10 +1,15 @@
 /node_modules/gridsome/*
 /node_modules/
 .cache
+
+
+/dist/
+
+src/.temp/now.js
 /src/.temp/*
 src/.temp/now.js
 /src/.temp/now.js
-/dist/
+
 *.log
 wp-config.php
 wp-content/advanced-cache.php
@@ -23,10 +28,3 @@ wp-content/plugins/hello.php
 /readme.html
 /sitemap.xml
 /sitemap.xml.gz
-
-src/.temp/now.js
-src/.temp/routes.js
-src/.temp/now.js
-src/.temp/icons.js
-src/.temp/config.js
-src/.temp/now.js

@@ -140,6 +140,15 @@ nav ul {
   padding: 0;
   display: flex;
   justify-content: space-around;
+      a {
+        color: black;
+        max-width: 20ch;
+        margin: .2em 0;
+    }
+    a:hover {
+        color: teal;        
+        transition: .2s ease-in;
+    }
 }
 
 .cool > li {
@@ -153,7 +162,7 @@ nav ul {
   /* background: rgba(0,0,0,0.2); */
   padding: 0.5em;
   display: inline-block;
-  margin: 1.2em;
+  margin: 1.2em auto;
   border-radius: 0.3em;
 }
 
@@ -208,13 +217,12 @@ nav ul {
     height: fit-content;
     
     a {
-      margin: 0 auto 0 auto;
       padding: 0;
+      text-align: left;
     }
     span {
-        margin: 1em auto 0 auto;
-        font-size: .9em;
-        font-style: italic;
+      margin: .5em auto;
+      font-size: 1em;
     }
   }
   .dropdown {
@@ -334,6 +342,7 @@ nav ul {
   justify-content: space-around;
 
   span {
+    font-weight: 500;
     font-size: 1.2em;
     margin: 0 0 0.5em 0;
   }
@@ -362,7 +371,7 @@ nav ul {
 
 .dropdown a {
   text-decoration: none;
-  color: var(--clr-teal-400);
 }
+
 
 </style>

@@ -5,6 +5,7 @@
   <HelpCards></HelpCards>
   <ImageText></ImageText>
   <ThreeCards></ThreeCards>
+  <MeetTheTeam></MeetTheTeam>
 
   </Layout>
 </template>
@@ -27,6 +28,7 @@ import HelpCards from '~/components/HelpCards.vue'
 import HeroComponent from '../components/HeroComponent.vue'
 import ImageText from '../components/ImageText.vue'
 import ThreeCards from '../components/ThreeCards.vue'
+import MeetTheTeam from '../components/MeetTheTeam.vue'
 
 export default {
   components: {
@@ -34,6 +36,7 @@ export default {
   HeroComponent,
   ImageText,
   ThreeCards,
+  MeetTheTeam,
   },
   name: 'home',
   metaInfo() {
@@ -52,6 +55,6 @@ export default {
 }
 </script>
 
-
 <style>
+
 </style>

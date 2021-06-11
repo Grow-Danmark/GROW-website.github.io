@@ -177,7 +177,7 @@ nav ul {
 .dropdown {
   opacity: 0;
   position: absolute;
-  overflow: hidden;
+  // overflow: hidden;
   padding: 1em;
   top: 0em;
   /* Positionen på drowdown-elementet */
@@ -214,6 +214,7 @@ nav ul {
   .cool {
     display: flex;
   }
+
   .cool > li {
     display: flex;
     flex-wrap: wrap;
@@ -228,6 +229,9 @@ nav ul {
       margin: .5em auto;
       font-size: 1em;
     }
+  }
+  .cool > li:not(:last-child):after  {
+  content: '';
   }
   .dropdown {
     display: flex;

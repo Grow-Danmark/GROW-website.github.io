@@ -70,10 +70,7 @@ figure img {
 
 .listStyleLogo ul {
   list-style-image: 
-  url('/assets/img/listicons/logoGreen1.png'),
-  url('/assets/img/backgrounds/logoBlue2.png'),
-  url('/assets/img/backgrounds/logoYellow3.png'),
-  url('/assets/img/backgrounds/logoRed4.png');
+  url('~@/assets/img/listicons/logoGreen1.png');
 }
 
 .wp-block-quote {

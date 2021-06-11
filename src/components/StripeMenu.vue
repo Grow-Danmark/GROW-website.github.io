@@ -155,6 +155,10 @@ nav ul {
   position: relative;
   display: flex;
   justify-content: center;
+  align-items: center;
+}
+.cool > li:not(:last-child):after  {
+  content: '|';
 }
 .cool > li > a {
   color: c.$black;

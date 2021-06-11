@@ -1,51 +1,85 @@
-// // Tommy Soft
+// // Tommy Soft   
 // @font-face {
-//     font-family: 'MADE Tommy Soft Black';
-//     src: url('../../fonts/Tommy_Soft/MADETommySoft-Black.ttf') format('truetype');
+//     font-family: 'MADE Tommy Soft';
+//     src: url('src/assets/fonts/Tommy_Soft/MADETommySoft-Bold.eot');
+//     src: url('src/assets/fonts/Tommy_Soft/MADETommySoft-Bold.eot?#iefix') format('embedded-opentype'),
+//         url('src/assets/fonts/Tommy_Soft/MADETommySoft-Bold.woff2') format('woff2'),
+//         url('src/assets/fonts/Tommy_Soft/MADETommySoft-Bold.woff') format('woff'),
+//         url('src/assets/fonts/Tommy_Soft/MADETommySoft-Bold.ttf') format('truetype');
+//     font-weight: bold;
+//     font-style: normal;
+//     font-display: swap;
+// }
+
+
+// @font-face {
+//     font-family: 'MADE Tommy Soft';
+//     src: url('src/assets/fonts/Tommy_Soft/MADETommySoft-Black.eot');
+//     src: url('src/assets/fonts/Tommy_Soft/MADETommySoft-Black.eot?#iefix') format('embedded-opentype'),
+//         url('src/assets/fonts/Tommy_Soft/MADETommySoft-Black.woff2') format('woff2'),
+//         url('src/assets/fonts/Tommy_Soft/MADETommySoft-Black.woff') format('woff'),
+//         url('src/assets/fonts/Tommy_Soft/MADETommySoft-Black.ttf') format('truetype');
 //     font-weight: 900;
 //     font-style: normal;
 //     font-display: swap;
 // }
-// @font-face {
-//     font-family: 'MADE Tommy Soft Medium';
-//     src: url('MADETommySoft-Medium.ttf') format('truetype');
-//     font-weight: 500;
-//     font-style: normal;
-//     font-display: swap;
-// }
-// @font-face {
-//     font-family: 'MADE Tommy Soft Bold';
-//     src: url('MADETommySoft-Bold.ttf') format('truetype');
-//     font-weight: bold;
-//     font-style: normal;
-//     font-display: swap;
-// }
+
 // @font-face {
 //     font-family: 'MADE Tommy Soft';
-//     src: url('MADETommySoft.ttf') format('truetype');
-//     font-weight: normal;
-//     font-style: normal;
-//     font-display: swap;
-// }
-// @font-face {
-//     font-family: 'MADE Tommy Soft Extra Bold';
-//     src: url('MADETommySoft-ExtraBold.ttf') format('truetype');
-//     font-weight: bold;
-//     font-style: normal;
-//     font-display: swap;
-// }
-// @font-face {
-//     font-family: 'MADE Tommy Soft Light';
-//     src: url('MADETommySoft-Light.ttf') format('truetype');
-//     font-weight: 300;
-//     font-style: normal;
-//     font-display: swap;
-// }
-// @font-face {
-//     font-family: 'MADE Tommy Soft Thin';
-//     src: url('MADETommySoft-Thin.ttf') format('truetype');
+//     src: url('src/assets/fonts/Tommy_Soft/MADETommySoft-Thin.eot');
+//     src: url('src/assets/fonts/Tommy_Soft/MADETommySoft-Thin.eot?#iefix') format('embedded-opentype'),
+//         url('src/assets/fonts/Tommy_Soft/MADETommySoft-Thin.woff2') format('woff2'),
+//         url('src/assets/fonts/Tommy_Soft/MADETommySoft-Thin.woff') format('woff'),
+//         url('src/assets/fonts/Tommy_Soft/MADETommySoft-Thin.ttf') format('truetype');
 //     font-weight: 100;
 //     font-style: normal;
 //     font-display: swap;
 // }
 
+// @font-face {
+//     font-family: 'MADE Tommy Soft';
+//     src: url('src/assets/fonts/Tommy_Soft/MADETommySoft-ExtraBold.eot');
+//     src: url('src/assets/fonts/Tommy_Soft/MADETommySoft-ExtraBold.eot?#iefix') format('embedded-opentype'),
+//         url('src/assets/fonts/Tommy_Soft/MADETommySoft-ExtraBold.woff2') format('woff2'),
+//         url('src/assets/fonts/Tommy_Soft/MADETommySoft-ExtraBold.woff') format('woff'),
+//         url('src/assets/fonts/Tommy_Soft/MADETommySoft-ExtraBold.ttf') format('truetype');
+//     font-weight: bold;
+//     font-style: normal;
+//     font-display: swap;
+// }
+
+// @font-face {
+//     font-family: 'MADE Tommy Soft';
+//     src: url('src/assets/fonts/Tommy_Soft/MADETommySoft-Medium.eot');
+//     src: url('src/assets/fonts/Tommy_Soft/MADETommySoft-Medium.eot?#iefix') format('embedded-opentype'),
+//         url('src/assets/fonts/Tommy_Soft/MADETommySoft-Medium.woff2') format('woff2'),
+//         url('src/assets/fonts/Tommy_Soft/MADETommySoft-Medium.woff') format('woff'),
+//         url('src/assets/fonts/Tommy_Soft/MADETommySoft-Medium.ttf') format('truetype');
+//     font-weight: 500;
+//     font-style: normal;
+//     font-display: swap;
+// }
+
+// @font-face {
+//     font-family: 'MADE Tommy Soft';
+//     src: url('src/assets/fonts/Tommy_Soft/MADETommySoft.eot');
+//     src: url('src/assets/fonts/Tommy_Soft/MADETommySoft.eot?#iefix') format('embedded-opentype'),
+//         url('src/assets/fonts/Tommy_Soft/MADETommySoft.woff2') format('woff2'),
+//         url('src/assets/fonts/Tommy_Soft/MADETommySoft.woff') format('woff'),
+//         url('src/assets/fonts/Tommy_Soft/MADETommySoft.ttf') format('truetype');
+//     font-weight: normal;
+//     font-style: normal;
+//     font-display: swap;
+// }
+
+// @font-face {
+//     font-family: 'MADE Tommy Soft';
+//     src: url('src/assets/fonts/Tommy_Soft/MADETommySoft-Light.eot');
+//     src: url('src/assets/fonts/Tommy_Soft/MADETommySoft-Light.eot?#iefix') format('embedded-opentype'),
+//         url('src/assets/fonts/Tommy_Soft/MADETommySoft-Light.woff2') format('woff2'),
+//         url('src/assets/fonts/Tommy_Soft/MADETommySoft-Light.woff') format('woff'),
+//         url('src/assets/fonts/Tommy_Soft/MADETommySoft-Light.ttf') format('truetype');
+//     font-weight: 300;
+//     font-style: normal;
+//     font-display: swap;
+// }

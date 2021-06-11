@@ -128,13 +128,14 @@ nav {
 .nav-logo {
   display: flex;
   align-items: center;
-  justify-content: start;
+  justify-content: flex-start;
 }
 .nav-logo-mobile {
-    display: none;
+  display: none;
 }
 
 nav ul {
+  z-index: 20;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -164,7 +165,7 @@ nav ul {
   color: c.$black;
   font-size: 1.2em;
   /* background: rgba(0,0,0,0.2); */
-  padding: 0.5em;
+  padding: 1em 0.5em;
   display: inline-block;
   margin: 1.2em auto;
   border-radius: 0.3em;
@@ -316,8 +317,8 @@ nav ul {
 }
 
 .dropdownBackground {
-  width: 15em;
-  height: 15em;
+  // width: 15em;
+  // height: 15em;
   position: absolute;
   background: c.$white;
   border-radius: 1em; // Kanten på dropdown

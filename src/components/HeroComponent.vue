@@ -1,17 +1,14 @@
 <template>
   <section class="hero-section">
     <div class="hero-text-container">
-    <p class="heroText">{{ $static.page.heroSection.welcome }}</p>
-    <h1>{{ $static.page.heroSection.heading }}</h1>
-    <p>{{ $static.page.heroSection.heroText }}</p>
-    
-    
+      <p class="heroText">{{ $static.page.heroSection.welcome }}</p>
+      <h1>{{ $static.page.heroSection.heading }}</h1>
+      <p>{{ $static.page.heroSection.heroText }}</p>
       <button class="btn--large">Læs mere</button>
-    
     </div>
 
-    <div class="blob">
-      <img :src="$static.page.heroSection.heroImg.sourceUrl" :alt="$static.page.heroSection.heroImg.altText" class="hero-image alpha-target">
+    <div class="hero-image">
+      <img :src="$static.page.heroSection.heroImg.sourceUrl" :alt="$static.page.heroSection.heroImg.altText">
     </div>
 
 </section>
@@ -46,7 +43,7 @@ export default {
 </script>
 
 <style lang="scss">
-// @use 'assets/sass/abstracts/variables';
+@use '../assets/sass/abstracts/variables' as v;
 
 .hero-section {
     padding: 3em;
@@ -54,19 +51,36 @@ export default {
     display: flex;
     flex-direction: row;
 }
-.hero-section img { 
-  width: 100%;
+.hero-image { 
+  
  }
 .hero-section h1 {
-   max-width: 19ch; 
+   max-width: 16ch; 
 }
 .hero-text-container{
   margin: 3em 0;
   width: 50%;
 }
-// @include mq(small) {
-  
-// }
+@include v.mq(medium) {
+  .hero-section {
+    padding: 0;
+    flex-direction: column;
+  }
+  .hero-text-container{
+  margin: 0;
+  width: 100%;
+  }
+}
+@include v.mq(large) {
+  .hero-section {
+    padding: 0;
+    flex-direction: column;
+  }
+  .hero-text-container{
+  margin: 0 auto;
+  width: 100%;
+  }
+}
 
 .hero-text-container > p:nth-child(1){
     color: var(--clr-teal-400); 

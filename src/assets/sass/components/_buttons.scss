@@ -18,7 +18,7 @@ button {
 button:hover {
   border-color: rgba(255, 255, 255, 1);
 }
-@media screen and (max-width: 40em) {
+@include v.mq(small) {
   button {
     display: block;
     margin: 0.2em auto;
@@ -46,5 +46,19 @@ button:hover {
   &--large {
     padding: 1em 3em;
     margin: 2em auto;
+  }
+}
+@include v.mq(medium) {
+  .btn {
+    &--small {
+    padding: 0.3em .9em;
+  }
+    &--medium {
+    padding: 0.5em 1.5em;
+    margin: 1.5em auto;
+  }
+    &--large {
+    padding: .7em 2.1em;
+  }
   }
 }

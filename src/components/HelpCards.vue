@@ -65,6 +65,8 @@ export default {
 </script>
 
 <style lang="scss">
+@use '../assets/sass/abstracts/variables' as v;
+
 .help-section {
   margin: 0 auto 5em auto;
 }
@@ -77,10 +79,9 @@ export default {
     margin-bottom: 3em;
   }
 }
-  @media screen and (max-width: 40em) {
+  @include v.mq(small) {
   .grid-columns {
-  grid-auto-flow: row;
-  grid-auto-rows: 1fr;
+  
 }
 }
 
@@ -91,7 +92,7 @@ export default {
   flex-basis: 25%;
   margin: 0 auto;
 
-  @media screen and (max-width: 40em) {
+  @include v.mq(small) {
     margin: .5em;
   }
 }

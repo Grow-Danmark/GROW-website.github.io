@@ -13,9 +13,26 @@ main {
   margin: 0;
 }
 .wp-block-column {
-  margin: 0;
-  width: 50%;
+  margin: 0.6em;
+  width: 45%;
 }
+
+.flex3 {
+  width: 30%;
+  margin: 0.6em;
+}
+
+.sectionBG1 {
+  background-image: url("/src/assets/img/heroBG.png");
+  background-size: cover;
+  width: 100vw;
+  height: 500px;
+  z-index: 10;
+
+};
+  
+
+
 
 main p {
   margin: 2em 1em;

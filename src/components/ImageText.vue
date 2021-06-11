@@ -54,10 +54,4 @@ export default {
     justify-content: center;
     flex-direction: row;
 }
-// .section-image-container {
-// }
-.hero-section img { 
-    width: 80%;
- }
-
 </style>

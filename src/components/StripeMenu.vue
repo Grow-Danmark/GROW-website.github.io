@@ -358,15 +358,12 @@ nav ul {
   }
 }
 .single-list {
-  min-width: 10em;
+  min-width: 12em;
 }
 
 .single-list-items {
   display: flex;
   flex-direction: column;
-}
-.difference {
-  min-width: 12em;
 }
 
 .dropdown a {

@@ -7,7 +7,7 @@
     <ul>
         <div class="nav-logo">
             <g-link to="/">
-            <g-image src="~/assets/img/logo.png" width="130" quality="100"></g-image>
+            <g-image src="~/assets/img/logo.png" width="130" quality="100" alt="GROWs logo"></g-image>
             </g-link>
         </div>
          <input type="checkbox" id="onOffToggle">
@@ -19,7 +19,7 @@
         <ul class="cool" id="menu">
         <div class="nav-logo-mobile">
             <g-link to="/">
-            <g-image src="~/assets/img/logo.png" width="105" quality="100"></g-image>
+            <g-image src="~/assets/img/logo.png" width="105" quality="100" alt="GROWs logo"></g-image>
         </g-link>
         </div>
         <li>

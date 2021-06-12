@@ -7,19 +7,19 @@
 <div class="grid-columns">
   <div class="help-card help-card-one">
     <g-image :src="$static.page.helpCards.image.sourceUrl" :alt="$static.page.helpCards.image.altText" class="help-img" quality="100"></g-image>
-    <h4 class="help-text">{{ $static.page.helpCards.image.altText }}</h4>
+    <h3 class="help-text">{{ $static.page.helpCards.image.altText }}</h3>
   </div>  
   <div class="help-card help-card-two">
     <g-image :src="$static.page.helpCards.image2.sourceUrl" :alt="$static.page.helpCards.image2.altText" class="help-img" quality="100"></g-image>
-    <h4 class="help-text">{{ $static.page.helpCards.heading2 }}</h4>
+    <h3 class="help-text">{{ $static.page.helpCards.heading2 }}</h3>
   </div>  
   <div class="help-card help-card-three">
     <g-image :src="$static.page.helpCards.image3.sourceUrl" :alt="$static.page.helpCards.image3.altText" class="help-img" quality="100"></g-image>
-    <h4 class="help-text">{{ $static.page.helpCards.heading3 }}</h4>
+    <h3 class="help-text">{{ $static.page.helpCards.heading3 }}</h3>
   </div>  
   <div class="help-card help-card-four">
     <g-image :src="$static.page.helpCards.image4.sourceUrl" :alt="$static.page.helpCards.image4.altText" class="help-img" quality="100"></g-image>
-    <h4 class="help-text">{{ $static.page.helpCards.heading4 }}</h4>
+    <h3 class="help-text">{{ $static.page.helpCards.heading4 }}</h3>
   </div>
  </div>
   <button class="btn--medium row">Få nu hjælp</button>

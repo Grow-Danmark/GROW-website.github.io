@@ -22,6 +22,15 @@
   h3 {
     text-align: center;
   }
+  &--glow-blue {
+    box-shadow: 0px 4px 20px rgba(144, 206, 241, 0.37);
+  }
+  &--glow-teal {
+    box-shadow: 0px 3px 20px rgba(2, 135, 133, 0.19);
+  }
+  &--glow-yellow {
+    box-shadow: 0px 1px 10px rgba(255, 181, 25, 0.24);
+  }
 }
 .card-img {
   border-radius: 50%;

@@ -5,23 +5,23 @@
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt non labore magnam nulla necessitatibus distinctio illo ut ab ratione. Quasi?</p>
     </div>
     <div class="cards">
-        <div class="card">
+        <div class="card card--glow-blue">
             <h3>Workshops, foredrag og arrangementer</h3>
             <hr>
             <p>I GROW vil vi altid gerne komme ud på din uddannelsesinstitution og fortælle dig om GROW-fællesskabets muligheder</p>
-            <button class="btn--small">Læs mere</button>
+            <button class="btn--small btn--blue">Læs mere</button>
         </div>
-        <div class="card">
+        <div class="card card--glow-teal">
             <h3>Certificering som GROW-ambassadør</h3>
             <hr>
             <p>Som GROW-ambassadør får man værktøjer og metoder til at hjælpe sig selv og hinanden til liv med mening, bedre mental sundhed og balance.</p>
-            <button class="btn--small">Læs mere</button>
+            <button class="btn--small btn--teal">Læs mere</button>
         </div>
-        <div class="card">
+        <div class="card card--glow-yellow">
             <h3>Online community og læring</h3>
             <hr>
             <p>I GROW ønsker vi, at alle unge har adgang til et fællesskab og livsændrende viden om vores egen og andres psykologi og adfærd </p>
-            <button class="btn--small">Læs mere</button>
+            <button class="btn--small btn--yellow">Læs mere</button>
         </div>
     </div>
   </div>

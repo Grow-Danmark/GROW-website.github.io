@@ -29,9 +29,28 @@
 .card-text {
   text-align: center;
 
-p {
-  margin: 0 auto;
-  text-align: left;
+  p {
+    margin: 0 auto;
+    text-align: left;
+  }
 }
 
+.person-card {
+  max-width: 10em;
+  max-height: 20em;
+
+  img {
+    margin: 0 auto;
+    width: 8em;
+    height: 8em;
+  }
+
+  h4 {
+    font-weight: 400;
+    font-style: oblique;
+    text-align:  center;
+  }
+  h3 {
+
+  }
 }

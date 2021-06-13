@@ -7,7 +7,7 @@
 <div class="grid-columns">
   <div class="help-card help-card-one">
     <g-image :src="$static.page.helpCards.image.sourceUrl" :alt="$static.page.helpCards.image.altText" class="help-img" quality="100"></g-image>
-    <h3 class="help-text">{{ $static.page.helpCards.heading }}</h3>
+    <h3 class="help-text">{{ $static.page.helpCards.heading1 }}</h3>
   </div>  
   <div class="help-card help-card-two">
     <g-image :src="$static.page.helpCards.image2.sourceUrl" :alt="$static.page.helpCards.image2.altText" class="help-img" quality="100"></g-image>
@@ -30,7 +30,7 @@
 query cards {
   page(id: "cG9zdDoy") {
     helpCards {
-      heading
+      heading1
       heading2
       heading3
       heading4

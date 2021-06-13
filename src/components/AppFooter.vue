@@ -79,12 +79,22 @@
     </div>
     <div class="footer-right">
     <div class="footer-nav-section-items">
+        <ul>
         <h5>Kontakt information</h5>
-        <g-link to="/vaerdier">Kontakt os</g-link>
+            <li>
+                <g-link to="/kontakt">Kontakt os</g-link>
+            </li>
+        </ul>
     </div>
         <div class="footer-nav-section-items verdensmaal">
         <h5>GROW støtter:</h5>
-        <g-link to="/vaerdier">Indsæt verdensmål</g-link>
+        <div class="verdensmaal">
+            <a href="https://www.verdensmaalene.dk/fakta/verdensmaalene" target="_blank" rel="noopener noreferrer">
+                <g-image src="../assets/img/verdensmaal/vm-3.png"></g-image>
+                <g-image src="../assets/img/verdensmaal/vm-4.png"></g-image>
+                <g-image src="../assets/img/verdensmaal/vm-10.png"></g-image>
+            </a>
+        </div>
     </div>
     </div>
 </footer>
@@ -155,6 +165,12 @@ footer {
         "footer-left footer-left footer-hjaelp footer-hjaelp"
         "footer-forskel footer-forskel footer-right footer-right"
         "footer-social footer-social . .";
+    }
+}
+.verdensmaal {
+    img {
+        border-radius: .5em;
+        margin-right: 1em;
     }
 }
 

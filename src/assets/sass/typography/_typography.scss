@@ -42,6 +42,7 @@ a {
   text-decoration: none;
 }
 
+
 @each $color, $shades in c.$colors {
   @each $shade, $value in $shades {
     .text-#{$color}-#{$shade} {

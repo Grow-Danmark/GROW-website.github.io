@@ -2,36 +2,80 @@
 <footer>
     <div class="footer-left">
         <div class="footer-nav-section-items">
+            <ul>
             <h5>Lær GROW at kende</h5>
-            <g-link to="/vores-historie">Vores historie</g-link>
-            <g-link to="/formaal-vison">Formål og vision</g-link>
-            <g-link to="/vaerdier">Værdier</g-link>
+                <li>
+                    <g-link to="/vores-historie">Vores historie</g-link>
+                </li>
+                <li>
+                    <g-link to="/formaal-vison">Formål og vision</g-link>
+                </li>
+                <li>
+                    <g-link to="/vaerdier">Værdier</g-link>
+                </li>
+            </ul>
         </div>
 
         <div class="footer-nav-section-items">
+            <ul>
             <h5>Mød teamet bag GROW</h5>
-            <g-link to="/vores-historie">Vores historie</g-link>
-            <g-link to="/formaal-vison">Formål og vision</g-link>
-            <g-link to="/vaerdier">Værdier</g-link>
+                <li>
+                    <g-link to="/grow-teamet">GROW teamet</g-link>
+                </li>
+                <li>
+                    <g-link to="/samarbejdspartnere">Samarbejdspartnere</g-link>
+                </li>
+            </ul>
         </div>
     </div>
         <div class="footer-nav-section-items footer-forskel">
+            <ul>
+            <h5>Det gør vi</h5>
+                <li>
+                  <g-link to="/certificeringer">Certificeringer</g-link>
+                </li>
+                <li>
+                    <g-link to="/workshops-foredrag-arrangementer">Workshops, foredrag og arrangementer</g-link>
+                </li>
+            </ul>
+            <ul>
             <h5>Gør en forskel</h5>
-            <g-link to="/vores-historie">Vores historie</g-link>
-            <g-link to="/formaal-vison">Formål og vision</g-link>
-            <g-link to="/vaerdier">Værdier</g-link>
+                <li>
+                  <g-link to="/bliv-ambassador">Bliv GROW-ambassadør</g-link>
+                </li>
+                <li>
+                    <g-link to="/bliv-samarbejdspartner">Bliv samarbejdspartner</g-link>
+                </li>
+                <li>
+                    <g-link to="/stot-grow">Støt GROW</g-link>
+                </li>
+            </ul>
         </div>
 
     <div class="footer-nav-section-items footer-hjaelp">
+        <ul>
         <h5>Få hjælp hos GROW</h5>
-        <g-link to="/faa-hjaelp-hos-grow">Se hvordan du kan få hjælp hos GROW</g-link>
+            <li>
+                <g-link to="/faa-hjaelp-hos-grow">Se hvordan du kan få hjælp hos GROW</g-link>
+            </li>
+        </ul>
     </div>
     <div class="footer-nav-section-items footer-social">
+        <ul>
         <h5>GROW på sociale medier</h5>
-        <a href="#" target="_blank" rel="noopener noreferrer">Facebook</a>
-        <a href="#" target="_blank" rel="noopener noreferrer">Instagram</a>
-        <a href="#" target="_blank" rel="noopener noreferrer">Youtube</a>
-        <a href="#" target="_blank" rel="noopener noreferrer">Linkedin</a>
+            <li>
+                <a href="#" target="_blank" rel="noopener noreferrer">Facebook</a>
+            </li>
+            <li>
+                <a href="#" target="_blank" rel="noopener noreferrer">Instagram</a>
+            </li>
+            <li>
+                <a href="#" target="_blank" rel="noopener noreferrer">Youtube</a>
+            </li>
+            <li>
+                <a href="#" target="_blank" rel="noopener noreferrer">Linkedin</a>
+            </li>
+        </ul>
     </div>
     <div class="footer-right">
     <div class="footer-nav-section-items">
@@ -68,9 +112,17 @@ footer {
     grid-gap: 1em;
     margin: 5em 5em;
 
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+    }
+    li {
+        max-width: 20ch;
+    }
+
     a {
         color: black;
-        max-width: 20ch;
         margin: .2em 0;
     }
     a:hover {

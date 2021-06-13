@@ -28,14 +28,24 @@
                 <div class="dual-list">
                     <ul>
                         <span>Lær GROW at kende</span>
+                        <li>
                             <g-link to="/vores-historie">Vores historie</g-link>
+                        </li>
+                        <li>
                             <g-link to="/formaal-vision">Formål og vision</g-link>
+                        </li>
+                        <li>
                             <g-link to="/vaerdier">Værdier</g-link>
+                        </li>
                     </ul>
                         <ul>
                         <span>Mød teamet bag GROW</span>
+                        <li>
                             <g-link to="/grow-teamet">GROW teamet</g-link>
+                        </li>                        
+                        <li>
                             <g-link to="/samarbejdspartnere">Samarbejdspartnere</g-link>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -45,8 +55,12 @@
             <div class="dropdown">
                 <div class="single-list">
                     <ul class="single-list-items">
+                      <li>
                         <g-link to="/certificeringer">Certificeringer</g-link>
+                      </li>
+                      <li>
                         <g-link to="/workshops-foredrag-arrangementer">Workshops, foredrag og arrangementer</g-link>
+                      </li>
                     </ul>
                 </div>
             </div>
@@ -56,9 +70,15 @@
             <div class="dropdown">
                 <div class="single-list">
                     <ul class="single-list-items difference">
+                      <li>
                         <g-link to="/bliv-ambassador">Bliv GROW-ambassadør</g-link>
+                      </li>
+                      <li>
                         <g-link to="/bliv-samarbejdspartner">Bliv samarbejdspartner</g-link>
+                      </li>
+                      <li>
                         <g-link to="/stot-grow">Støt GROW</g-link>
+                      </li>
                     </ul>
                 </div>
             </div>

@@ -1,9 +1,13 @@
-    a {
-        color: black;
-        max-width: 20ch;
-        margin: .2em 0;
-    }
-    a:hover {
-        color: teal;        
-        transition: .2s ease-in;
-    }
+a {
+    color: black;
+    max-width: 20ch;
+    margin: .2em 0;
+}
+a:hover {
+    color: teal;        
+    transition: .2s ease-in;
+}
+hr {
+  margin-left: 0;
+  margin-right: 0;
+}

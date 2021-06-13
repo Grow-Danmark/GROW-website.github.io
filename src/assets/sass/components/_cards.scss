@@ -19,9 +19,6 @@
   box-shadow: 0px 3px 20px rgba(2, 135, 133, 0.19);
   border-radius: 30px;
 
-  h3 {
-    text-align: center;
-  }
   &--glow-blue {
     box-shadow: 0px 4px 20px rgba(144, 206, 241, 0.37);
   }
@@ -30,6 +27,9 @@
   }
   &--glow-yellow {
     box-shadow: 0px 1px 10px rgba(255, 181, 25, 0.24);
+  }
+  &--glow-red {
+    box-shadow: 0px 1px 10px rgba(240, 47, 101, 0.25);
   }
 }
 .card-img {

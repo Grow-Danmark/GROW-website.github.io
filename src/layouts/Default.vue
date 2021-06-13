@@ -4,9 +4,8 @@
       <transition name="fade" appear> -->
          <!-- a wrapper for slot is needed -->
          <main>
-          <slot /> <!-- the content -->
-         </main>
-        
+          <slot /> <!-- the content -->   
+        </main> 
       </transition>
     <AppFooter />
   </div>

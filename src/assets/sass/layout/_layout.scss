@@ -27,7 +27,18 @@ main {
 .centered {
   margin: 0 auto;
 }
+.alignment--centered {
+  display: flex;
+  justify-content: center;
+}
+.alignment--left {
+  display: flex;
 
+}
+.alignment--right {
+  display: flex;
+  justify-content: flex-end;
+}
 @include v.mq(xlarge) {
   .layout {
     max-width: xlarge;
@@ -43,4 +54,16 @@ main {
   display: grid;
   grid-auto-flow: column;
   grid-auto-columns: 1fr;
+}
+.border-teal {
+    border: 1px solid var(--clr-teal-400);
+}
+.border-blue {
+    border: 1px solid var(--clr-blue-400);
+}
+.border-yellow {
+    border: 1px solid var(--clr-yellow-400);
+}
+.border-red {
+    border: 1px solid var(--clr-red-400);
 }

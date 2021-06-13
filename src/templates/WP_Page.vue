@@ -1,6 +1,6 @@
 <template>
 <layout>
-  <main v-html="$page.page.content" /> 
+  <div v-html="$page.page.content" /> 
 </layout>
 </template>
 

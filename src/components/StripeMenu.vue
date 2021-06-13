@@ -17,11 +17,6 @@
             <div></div>
         </label>
         <ul class="cool" id="menu">
-        <div class="nav-logo-mobile">
-            <g-link to="/">
-            <g-image src="~/assets/img/logo.png" width="105" quality="100" alt="GROWs logo"></g-image>
-        </g-link>
-        </div>
         <li>
             <a href="#" class="menu-item">Om GROW</a>
             <div class="dropdown">
@@ -198,7 +193,6 @@ nav ul {
 .dropdown {
   opacity: 0;
   position: absolute;
-  // overflow: hidden;
   padding: 1em;
   top: 0em;
   /* Positionen på drowdown-elementet */
@@ -223,19 +217,13 @@ nav ul {
     padding: 2em 0;
     justify-content: center;
   }
-  .nav-logo-mobile {
-      display: block;
-      margin: 0 auto;
-
-  }
   nav ul {
-    justify-content: space-evenly;
+    justify-content: end;
     flex-direction: column;
   }
   .cool {
     display: flex;
   }
-
   .cool > li {
     display: flex;
     flex-wrap: wrap;
@@ -253,6 +241,9 @@ nav ul {
   }
   .cool > li:not(:last-child):after  {
   content: '';
+  }
+  .dual-list {
+    flex-direction: column;
   }
   .dropdown {
     display: flex;
@@ -365,7 +356,6 @@ nav ul {
 }
 
 .dual-list {
-  min-width: 30em;
   display: flex;
   align-items: baseline;
   justify-content: space-around;
@@ -373,6 +363,7 @@ nav ul {
   span {
     font-weight: 500;
     font-size: 1.2em;
+    min-width: 10em;
     margin: 0 0 0.5em 0;
   }
   ul {

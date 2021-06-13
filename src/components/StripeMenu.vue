@@ -92,7 +92,7 @@
 <script>
 export default {
   mounted: function() {
-    const triggers = document.querySelectorAll('.cool > li:nth-child(-n+4)');
+    const triggers = document.querySelectorAll('.cool > li:nth-child(-n+3)');
     const background  = document.querySelector('.dropdownBackground');
     const nav  = document.querySelector('.top');
 

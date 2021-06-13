@@ -1,33 +1,30 @@
 <template>
   <section class="section-img-text row--reversed">
     <div class="section-image-container">
-      <img :src="$static.page.heroSection.heroImg.sourceUrl" :alt="$static.page.heroSection.heroImg.altText" class="alpha-target">
+      <img :src="$static.page.secondSection.blockImage.sourceUrl" :alt="$static.page.secondSection.blockImage.altText">
     </div>
     <div class="section-text-container">
-    <h2>{{ $static.page.heroSection.heading }}</h2>
-    <p>{{ $static.page.heroSection.heroText }}</p>
-    <ul>
-      <li>Fællesskab</li>
-      <li>Bevidsthed</li>
-      <li>Meningsfuldhed</li>
-      <li>Balance</li>
-    </ul>
+    <h2>{{ $static.page.secondSection.blockHeading }}</h2>
+    <p>{{ $static.page.secondSection.blockText }}</p>
 
-    <button>Få nu hjælp</button>
+    <g-link to="/grow-teamet">
+      <button class="btn--medium">
+        Mød GROW teamet
+      </button>
+    </g-link>
     </div>
 </section>
 </template>
 
 <static-query>
-query hero {
+query team {
   page(id: "cG9zdDoy") {
-    heroSection {
-      heading
-      heroText
-      welcome
-      heroImg {
+    secondSection {
+      blockHeading
+      blockText
+      blockImage {
+        sourceUrl
         altText
-        sourceUrl(size: LARGE)
       }
     }
   }

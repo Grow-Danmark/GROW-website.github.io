@@ -1,7 +1,10 @@
+@use '../abstracts/variables' as v;
+
 form {
     display: flex;
     justify-content: space-between;
 }
+
 
 input, input[type=checkbox], textarea {
 background: #FFFFFF;
@@ -32,4 +35,13 @@ input[type="text" i] {
 }
 .svar-labels {
     display: flex;
+}
+
+@include v.mq(medium) {
+    form {
+        display: block;
+    }
+    .personlig-info {
+        flex-direction: column;
+    }
 }

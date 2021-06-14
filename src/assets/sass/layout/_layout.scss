@@ -55,6 +55,12 @@ main {
   grid-auto-flow: column;
   grid-auto-columns: 1fr;
 }
+@include v.mq(small) {
+  .grid-columns {
+    grid-auto-flow: row;
+    margin: 0 auto;
+  }
+}
 .border-teal {
     border: 1px solid var(--clr-teal-400);
 }

@@ -66,21 +66,25 @@ export default {
 @include v.mq(medium) {
   .hero-section {
     padding: 0;
-    flex-direction: column;
   }
   .hero-text-container{
   margin: 0;
   width: 100%;
   }
+  .hero-image {
+    display: none;
+  }
 }
 @include v.mq(large) {
   .hero-section {
     padding: 0;
-    flex-direction: column;
   }
   .hero-text-container{
   margin: 0 auto;
   width: 100%;
+  }
+  .hero-image {
+    width: 40%;
   }
 }
 

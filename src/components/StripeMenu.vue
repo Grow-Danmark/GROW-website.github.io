@@ -156,13 +156,13 @@ nav ul {
   padding: 0;
   display: flex;
   justify-content: space-around;
-      a {
-        color: black;
-        max-width: 20ch;
-        margin: .2em 0;
+    a {
+      color: c.$black;
+      max-width: 20ch;
+      margin: .2em 0;
     }
     a:hover {
-        color: teal;        
+        color: var(--clr-teal-400);        
         transition: .2s ease-in;
     }
 }
@@ -178,12 +178,10 @@ nav ul {
 }
 .cool > li > a {
   color: c.$black;
-  font-size: 1.2em;
-  /* background: rgba(0,0,0,0.2); */
+  font-weight: 400;
   padding: 1em 0.5em;
   display: inline-block;
   margin: 1.2em auto;
-  border-radius: 0.3em;
 }
 
 .menu-item {
@@ -229,7 +227,7 @@ nav ul {
     flex-wrap: wrap;
     flex-direction: column;
     height: fit-content;
-    
+
     a {
       padding: 0;
       text-align: left;
@@ -238,6 +236,9 @@ nav ul {
       margin: .5em auto;
       font-size: 1em;
     }
+  }
+  .cool > li > a {
+    font-weight: 500;
   }
   .cool > li:not(:last-child):after  {
   content: '';
@@ -328,8 +329,6 @@ nav ul {
 }
 
 .dropdownBackground {
-  // width: 15em;
-  // height: 15em;
   position: absolute;
   background: c.$white;
   border-radius: 1em; // Kanten på dropdown
@@ -363,8 +362,9 @@ nav ul {
   span {
     font-weight: 500;
     font-size: 1.2em;
-    min-width: 10em;
+    min-width: 12em;
     margin: 0 0 0.5em 0;
+    color: var(--clr-teal-500);
   }
   ul {
     display: flex;

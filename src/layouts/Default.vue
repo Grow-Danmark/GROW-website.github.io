@@ -1,8 +1,7 @@
 <template>
   <div>
     <AppHeader />
-      <transition name="fade" appear> -->
-         <!-- a wrapper for slot is needed -->
+      <transition name="fade" appear>
          <main>
           <slot /> <!-- the content -->   
         </main> 

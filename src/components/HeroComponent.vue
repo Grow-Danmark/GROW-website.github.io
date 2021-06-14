@@ -48,10 +48,10 @@ export default {
 @use '../assets/sass/abstracts/variables' as v;
 
 .hero-section {
-    padding: 3em;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: row;
+  padding: 3em;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
 }
 .hero-image { 
   margin: 0 auto;
@@ -60,7 +60,6 @@ export default {
    max-width: 16ch; 
 }
 .hero-text-container{
-  margin: 3em 0;
   width: 50%;
 }
 @include v.mq(medium) {

@@ -1,20 +1,27 @@
 @use '../abstracts/variables' as v;
 @use '../abstracts/colors' as c;
 
-
-
 .wp-block-columns {
   display: flex;
   justify-content: space-between;
   width: 100%;
   margin: 0;
 }
+
 .wp-block-column {
   width: 45%;
 }
 // .wp-block-column:not(:last-child) {
 //   margin: 0 5em 0 0;
 // }
+@include v.mq(medium) {
+  .wp-block-columns {
+    flex-direction: column;
+  }
+  .wp-block-column {
+    width: 100%;
+  }
+}
 
 .flex3 {
   width: 30%;
@@ -70,7 +77,6 @@ figure img {
 .subheading {
   font-weight: 300;
   color: var(--clr-dark-100);
-
 }
 .yoast-breadcrumbs {
 }

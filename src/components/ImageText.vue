@@ -1,7 +1,7 @@
 <template>
   <section class="section-img-text">
     <div class="section-image-container">
-      <img :src="$static.page.heroSection.heroImg.sourceUrl" :alt="$static.page.heroSection.heroImg.altText" class="hero-image alpha-target">
+      <img src="http://wp.grow.dk/wp-content/uploads/2021/06/imgLanding2.png" :alt="$static.page.heroSection.heroImg.altText" class="hero-image alpha-target">
     </div>
     <div class="section-text-container">
     <h2>Vi er nærværende dér, hvor det gør en forskel</h2>
@@ -14,8 +14,9 @@
       <li>Meningsfuldhed</li>
       <li>Balance</li>
     </ul>
-
-    <button class="btn--small">Læs mere her</button>
+    <g-link to="/formaal-vision">
+      <button class="btn--small">Læs mere her</button>
+    </g-link>
     </div>
 </section>
 </template>
@@ -49,9 +50,10 @@ export default {
 
 <style lang="scss">
 .section-img-text {
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
 }
+
 </style>

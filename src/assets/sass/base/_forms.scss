@@ -2,39 +2,31 @@
 
 form {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
-
-input, input[type=checkbox], textarea {
-background: #FFFFFF;
-border: 1px solid rgba(2, 135, 133, 0.25);
-box-sizing: border-box;
-border-radius: 10px;
+.wpcf7 input[type="text"],
+.wpcf7 input[type="email"],
+.wpcf7 input[type="tel"],
+.wpcf7 textarea
+{
+    background: #FFFFFF;
+    border: 1px solid rgba(2, 135, 133, 0.25);
+    box-sizing: border-box;
+    border-radius: 10px;
+    min-height: 2em;
 }
-
-input {
-    height: 2em;
-}
-input[type="text" i] {
+.wpcf7 label {
     margin: 0 1em 0 0;
 }
-.wpcf7-form-control-wrap {
-    height: 2em;
-}
-.wpcf7-list-item:not(:last-child) {
-    display: inline-flex;
-    margin: 0 1em 0 0;
-    height: 2em;
-}
-.wpcf7-list-item-label {
-    height: 2em;
+.wpcf7 p {
+    max-width: 48ch;
 }
 .personlig-info {
-    display: flex;
+    margin: 0 0 1em 0;
 }
-.svar-labels {
-    display: flex;
+.form-left, .form-right {
+    max-width: 28em;
 }
 
 @include v.mq(medium) {

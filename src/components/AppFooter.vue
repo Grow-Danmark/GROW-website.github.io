@@ -8,7 +8,7 @@
                     <g-link to="/vores-historie">Vores historie</g-link>
                 </li>
                 <li>
-                    <g-link to="/formaal-vison">Formål og vision</g-link>
+                    <g-link to="/formaal-vision">Formål og vision</g-link>
                 </li>
                 <li>
                     <g-link to="/vaerdier">Værdier</g-link>

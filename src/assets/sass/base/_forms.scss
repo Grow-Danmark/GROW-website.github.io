@@ -1,0 +1,35 @@
+form {
+    display: flex;
+    justify-content: space-between;
+}
+
+input, input[type=checkbox], textarea {
+background: #FFFFFF;
+border: 1px solid rgba(2, 135, 133, 0.25);
+box-sizing: border-box;
+border-radius: 10px;
+}
+
+input {
+    height: 2em;
+}
+input[type="text" i] {
+    margin: 0 1em 0 0;
+}
+.wpcf7-form-control-wrap {
+    height: 2em;
+}
+.wpcf7-list-item:not(:last-child) {
+    display: inline-flex;
+    margin: 0 1em 0 0;
+    height: 2em;
+}
+.wpcf7-list-item-label {
+    height: 2em;
+}
+.personlig-info {
+    display: flex;
+}
+.svar-labels {
+    display: flex;
+}

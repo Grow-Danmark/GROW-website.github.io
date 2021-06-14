@@ -49,11 +49,31 @@ export default {
 </script>
 
 <style lang="scss">
+@use '../assets/sass/abstracts/variables' as v;
+
 .section-img-text {
+    display: grid;
+    grid-auto-flow: column;
+}
+.section-image-container {
+  img {
+    max-width: 30em;
+  }
+}
+
+@include v.mq(large) {
+  .section-img-text {
+    display: grid;
+    grid-auto-flow: row;
+
+  .section-image-container {
+    margin: 0 1em 0 0;
+  img {
+  max-width: 20em;
   margin: 0 auto;
-  display: flex;
-  justify-content: space-around;
-  flex-direction: row;
+  }
+}
+}
 }
 
 </style>

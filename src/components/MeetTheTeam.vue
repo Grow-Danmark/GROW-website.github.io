@@ -46,4 +46,7 @@ export default {
 .row--reversed {
   flex-direction: row-reverse;
 }
+.section-text-container {
+margin: auto 0;
+}
 </style>

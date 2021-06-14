@@ -111,6 +111,7 @@ export default {
 </script>
 
 <style lang="scss">
+
 .footer-nav-section-items {
     display: flex;
     flex-direction: column;
@@ -122,6 +123,9 @@ footer {
     grid-gap: 1em;
     margin: 5em 5em;
 
+    h5 {
+        font-weight: 500;
+    }
     ul {
         margin: 0;
         padding: 0;
@@ -132,8 +136,9 @@ footer {
     }
 
     a {
-        color: black;
+        color: #000;
         margin: .2em 0;
+        font-size: var(--fs-300);
     }
     a:hover {
         color: teal;        

@@ -76,10 +76,8 @@ export default {
   display: flex;
   align-items: center;
   flex-direction: column;
+  margin: 2em auto
 
-  p {
-    margin-bottom: 3em;
-  }
 }
   @include v.mq(small) {
   .grid-columns {
@@ -93,10 +91,6 @@ export default {
   max-width: 10em;
   flex-basis: 25%;
   margin: 0 auto;
-
-  @include v.mq(small) {
-    margin: .5em;
-  }
 }
 .help-img {
   width: 80%;

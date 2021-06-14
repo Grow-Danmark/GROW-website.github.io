@@ -8,10 +8,30 @@
   margin: 0;
 }
 
+.wp-block-column {
+
+}
+
+.wp-block-group {
+  display: block;
+}
+.wp-block-group__inner-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+// .wp-block-column:not(:last-child) {
+//   margin: 0 5em 0 0;
+// }
 @include v.mq(medium) {
   .wp-block-columns {
     flex-direction: column;
   }
+  .wp-block-column {
+
+  }
+}
 
 .flex3 {
   width: 30%;
@@ -27,6 +47,20 @@ figure img {
   width: 95%;
   height: auto;
   object-fit: contain;
+}
+
+.valueIcon {
+  width: 300px;
+  height: 200px;
+  position: top 100px;
+  object-fit: contain;
+  z-index: 10;
+}
+
+.valueWrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .listStyleLogo ul {

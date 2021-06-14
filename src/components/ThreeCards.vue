@@ -2,14 +2,14 @@
   <div class="cards-container centered"> 
     <div class="headers centered">
     <h2>Hvad vi kan tilbyde i GROW</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt non labore magnam nulla necessitatibus distinctio illo ut ab ratione. Quasi?</p>
+    <p class="subheading">Hos GROW tilbyder vi blandt andet certificeringer, workshops og læring.</p>
     </div>
     <div class="cards">
         <div class="card card--glow-blue">
             <h3 class="clr-blue">Workshops, foredrag og arrangementer</h3>
             <hr class="border-blue">
             <p>I GROW vil vi altid gerne komme ud på din uddannelsesinstitution og fortælle dig om GROW-fællesskabets muligheder</p>
-            <g-link to="/">
+            <g-link to="/workshops-foredrag-arrangementer">
                 <button class="btn--small btn--blue">Læs mere</button>
             </g-link>
         </div>
@@ -17,7 +17,7 @@
             <h3 class="clr-teal">Certificering som GROW-ambassadør</h3>
             <hr class="border-teal">
             <p>Som GROW-ambassadør får man værktøjer og metoder til at hjælpe sig selv og hinanden til liv med mening, bedre mental sundhed og balance.</p>
-            <g-link to="/">
+            <g-link to="/certificeringer">
                 <button class="btn--small btn--teal">Læs mere</button>
             </g-link>
         </div>

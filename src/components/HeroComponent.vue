@@ -4,7 +4,9 @@
       <p class="heroText">{{ $static.page.heroSection.welcome }}</p>
       <h1>{{ $static.page.heroSection.heading }}</h1>
       <p>{{ $static.page.heroSection.heroText }}</p>
+      <g-link to="/vores-historie">
       <button class="btn--large">Læs mere</button>
+      </g-link>
     </div>
 
     <div class="hero-image">
@@ -52,7 +54,7 @@ export default {
     flex-direction: row;
 }
 .hero-image { 
-  
+  margin: 0 auto;
  }
 .hero-section h1 {
    max-width: 16ch; 

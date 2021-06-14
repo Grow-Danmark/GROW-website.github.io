@@ -2,7 +2,7 @@
 <section class="help-section">
   <div class="headers">
   <h2>Hvordan kan GROW hjælpe dig?</h2>
-  <p>Mega fed og inspirerende tekst</p>
+  <p class="has-text-align-center">Hos GROW har vi nogle grundlæggende værdier, som vi tror på kan være med til at hjælpe dig.</p>
   </div>
 <div class="grid-columns">
   <div class="help-card help-card-one">
@@ -22,7 +22,9 @@
     <h3 class="help-text">{{ $static.page.helpCards.heading4 }}</h3>
   </div>
  </div>
-  <button class="btn--medium row">Få nu hjælp</button>
+  <g-link to="/vaerdier">
+  <button class="btn--medium row">Læs mere om vores værdier</button>
+  </g-link>
 </section>
 </template>
 

@@ -1,6 +1,6 @@
 <template>
 <footer>
-    <hr class="before-footer border-teal">
+    <hr class="before-footer">
     <div class="footer">
         <div class="footer-left">
             <div class="footer-nav-section-items">
@@ -64,9 +64,11 @@ export default {
 </script>
 
 <style lang="scss">
+@use '../assets/sass/abstracts/colors' as c;
+
 .before-footer {
     margin: 0 5em;
-    opacity: 40%;
+    border: 1px solid c.$teal50;
 }
 .footer-nav-section-items {
     display: flex;

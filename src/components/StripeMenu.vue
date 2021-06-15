@@ -1,7 +1,7 @@
-// Tredjepartskode fra Wes Bos på Github: https://github.com/wesbos/JavaScript30/blob/master/26%20-%20Stripe%20Follow%20Along%20Nav/index-FINISHED.html
 <template>
   <nav class="top">
     <div class="dropdownBackground">
+<!-- Tredjepartskode fra Wes Bos på Github: https://github.com/wesbos/JavaScript30/blob/master/26%20-%20Stripe%20Follow%20Along%20Nav/index-FINISHED.html -->
       <span class="arrow"></span>
     </div>
     <ul>
@@ -143,7 +143,6 @@ nav {
 .nav-logo {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
 }
 .nav-logo-mobile {
   display: none;
@@ -151,22 +150,16 @@ nav {
 
 nav ul {
   z-index: 20;
-  list-style: none;
   margin: 0;
   padding: 0;
+  list-style: none;
   display: flex;
   justify-content: space-around;
-    a {
-      color: c.$black;
-      max-width: 20ch;
-      margin: .2em 0;
-    }
-    a:hover {
-        color: var(--clr-teal-400);        
-        transition: .2s ease-in;
-    }
+  a:hover {
+      color: var(--clr-teal-400);        
+      transition: .2s ease-in;
+  }
 }
-
 .cool > li {
   position: relative;
   display: flex;
@@ -181,8 +174,8 @@ nav ul {
   padding: 1em 0.5em;
   display: inline-block;
   margin: 1.2em auto;
-}
 
+}
 .menu-item {
   font-weight: 600;
 }
@@ -390,8 +383,6 @@ nav ul {
 }
 .active--exact {
   color: var(--clr-teal-300);
-  font-weight: 600;
-  overflow: hidden;
 }
 
 </style>

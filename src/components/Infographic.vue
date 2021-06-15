@@ -31,7 +31,7 @@ export default {
     display: flex;
     margin: 5em;
     img {
-        max-width: 80%;
+        max-width: 90%;
     }
 }
 .info-img {
@@ -41,10 +41,6 @@ export default {
 @include v.mq(medium) {
     .infographic {
         margin: 1em;
-
-        img {
-            width: 30em;
-        }
     }
 }
 

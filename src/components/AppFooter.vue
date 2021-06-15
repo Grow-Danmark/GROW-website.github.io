@@ -65,6 +65,7 @@ export default {
 
 <style lang="scss">
 @use '../assets/sass/abstracts/colors' as c;
+@use '../assets/sass/abstracts/variables' as v;
 
 .before-footer {
     margin: 0 5em;
@@ -91,7 +92,7 @@ export default {
         transition: .2s ease-in;
     }
 }
-@media screen and (max-width: 60em) {
+@include v.mq(large) {
     .footer-left {
     grid-area: footer-left;
     }
@@ -112,6 +113,7 @@ export default {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
+    grid-gap: 2em;
     grid-template-areas: 
         "footer-left footer-left footer-hjaelp footer-hjaelp"
         "footer-forskel footer-forskel footer-right footer-right"
@@ -121,5 +123,15 @@ export default {
 .verdensmaal {
     display: flex;
     justify-content: space-between;
+}
+
+@include v.mq(small) {
+    .verdensmaal {
+    flex-direction: column;
+
+    img {
+        width: 4em;
+    }
+}
 }
 </style>

@@ -37,7 +37,7 @@
         <div class="footer-right">
         <div class="footer-nav-section-items">
             <h5>Kontakt information</h5>
-            <g-link to="/vaerdier">Kontakt os</g-link>
+            <g-link to="/kontakt">Kontakt os</g-link>
         </div>
             <div class="footer-nav-section-items verdensmaal">
             <h5>GROW støtter:</h5>

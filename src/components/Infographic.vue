@@ -22,10 +22,24 @@ export default {
 </script>
 
 <style lang="scss">
+@use '../assets/sass/abstracts/variables' as v;
+
+
 .info-section {
     margin: 5em auto;
 }
 .infographic {
     margin: 5em 0;
+}
+
+@include v.mq(medium) {
+    img{
+        width: 30em;
+    }
+}
+@include v.mq(large) {
+    img{
+        width: 50em;
+    }
 }
 </style>

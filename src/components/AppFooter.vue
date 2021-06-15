@@ -105,7 +105,7 @@ export default {
     grid-area: footer-right;
     }
 
-    footer {
+    .footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;

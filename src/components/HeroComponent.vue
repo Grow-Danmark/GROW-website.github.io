@@ -3,7 +3,7 @@
     <div class="hero-text-container">
       <p class="heroText">{{ $static.page.heroSection.welcome }}</p>
       <h1>{{ $static.page.heroSection.heading }}</h1>
-      <p>{{ $static.page.heroSection.heroText }}</p>
+      <p class="subheading">{{ $static.page.heroSection.heroText }}</p>
       <g-link to="/vores-historie">
       <button class="btn--large">Læs mere</button>
       </g-link>
@@ -55,12 +55,17 @@ export default {
 }
 .hero-image { 
   margin: 0 auto;
+
+  img {
+    width: 500px;
+    height: 500px;
+  }
  }
 .hero-section h1 {
    max-width: 16ch; 
 }
 .hero-text-container{
-  width: 50%;
+  margin: 2em auto;
 }
 @include v.mq(medium) {
   .hero-section {

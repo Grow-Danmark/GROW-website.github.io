@@ -40,4 +40,5 @@ export default {
 .fade-enter {
   opacity: 0;
 }
+
 </style>

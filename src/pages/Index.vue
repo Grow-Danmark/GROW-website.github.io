@@ -6,6 +6,7 @@
   <ImageText></ImageText>
   <ThreeCards></ThreeCards>
   <MeetTheTeam></MeetTheTeam>
+  <Infographic></Infographic>
 
   </Layout>
 </template>
@@ -29,6 +30,8 @@ import HeroComponent from '../components/HeroComponent.vue'
 import ImageText from '../components/ImageText.vue'
 import ThreeCards from '../components/ThreeCards.vue'
 import MeetTheTeam from '../components/MeetTheTeam.vue'
+import Infographic from '../components/Infographic.vue'
+
 
 export default {
   components: {
@@ -37,6 +40,7 @@ export default {
   ImageText,
   ThreeCards,
   MeetTheTeam,
+  Infographic,
   },
   name: 'home',
   metaInfo() {

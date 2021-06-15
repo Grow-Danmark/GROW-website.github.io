@@ -1,5 +1,5 @@
 <template>
-  <section class="section-img-text row--reversed">
+  <section class="section-img-text">
     <div class="section-image-container">
       <img :src="$static.page.secondSection.blockImage.sourceUrl" :alt="$static.page.secondSection.blockImage.altText">
     </div>
@@ -43,9 +43,6 @@ export default {
 </script>
 
 <style lang="scss">
-.row--reversed {
-  flex-direction: row-reverse;
-}
 .section-text-container {
 margin: auto 0;
 }

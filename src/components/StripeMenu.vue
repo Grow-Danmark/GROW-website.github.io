@@ -357,7 +357,7 @@ nav ul {
     font-size: 1.2em;
     min-width: 12em;
     margin: 0 0 0.5em 0;
-    color: var(--clr-teal-400);
+    color: c.$teal50;
     opacity: 50%;
   }
   ul {

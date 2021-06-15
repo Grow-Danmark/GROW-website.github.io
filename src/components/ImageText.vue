@@ -67,7 +67,7 @@ export default {
     grid-auto-flow: row;
 
   .section-image-container {
-    margin: 0 1em 0 0;
+    margin: 0 auto;
   img {
   max-width: 20em;
   margin: 0 auto;

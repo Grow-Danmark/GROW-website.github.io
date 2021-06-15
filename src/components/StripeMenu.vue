@@ -358,7 +358,6 @@ nav ul {
     min-width: 12em;
     margin: 0 0 0.5em 0;
     color: c.$teal50;
-    opacity: 50%;
   }
   ul {
     display: flex;

@@ -1,7 +1,12 @@
 /node_modules/gridsome/*
 /node_modules/
 .cache
+/dist/
 
+src/.temp/n
+/src/.temp/
+src/.temp/now.js
+/src/.temp/now.js
 
 
 *.log
@@ -12,9 +17,3 @@
 /sitemap.xml
 /sitemap.xml.gz
 
-/dist/
-
-src/.temp/n
-/src/.temp/
-src/.temp/now.js
-/src/.temp/now.js

@@ -37,7 +37,4 @@ export default {
   flex-direction: column;
   align-items: center;
 }
-body {
-  background-repeat: repeat;
-}
 </style>

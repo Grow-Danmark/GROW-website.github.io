@@ -5,7 +5,7 @@
     </div>
     <div class="section-text-container">
     <h2>{{ $static.page.secondSection.blockHeading }}</h2>
-    <p>{{ $static.page.secondSection.blockText }}</p>
+    <p class="subheading">{{ $static.page.secondSection.blockText }}</p>
 
     <g-link to="/grow-teamet">
       <button class="btn--medium">

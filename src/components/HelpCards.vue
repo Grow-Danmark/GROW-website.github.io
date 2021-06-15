@@ -2,7 +2,7 @@
 <section class="help-section">
   <div class="headers">
   <h2>Hvordan kan GROW hjælpe dig?</h2>
-  <p class="has-text-align-center">Hos GROW har vi nogle grundlæggende værdier, som vi tror på kan være med til at hjælpe dig.</p>
+  <p class="has-text-align-center subheading">Hos GROW har vi nogle grundlæggende værdier, som vi tror på kan være med til at hjælpe dig.</p>
   </div>
 <div class="grid-columns">
   <div class="help-card help-card-one">

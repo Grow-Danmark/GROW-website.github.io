@@ -5,10 +5,10 @@
     </div>
     <div class="section-text-container">
     <h2>Vi er nærværende dér, hvor det gør en forskel</h2>
-    <p>Hos GROW bliver du en del af et fællesskab der er nærværende. Du bliver en del af et fællesskab, hvor der er plads til hele dig. Sammen kan vi gøre en 
+    <p class="subheading">Hos GROW bliver du en del af et fællesskab der er nærværende. Du bliver en del af et fællesskab, hvor der er plads til hele dig. Sammen kan vi gøre en 
       forskel for hinanden, så vi finder meningsfuldhed og balance.
     </p>
-    <ul>
+    <ul class="subheading">
       <li>Fællesskab</li>
       <li>Bevidsthed</li>
       <li>Meningsfuldhed</li>

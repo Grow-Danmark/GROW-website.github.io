@@ -6,6 +6,7 @@
     </div>
     <ul>
         <div class="nav-logo">
+          <!-- Tredjepartskode fra Wes Bos på Github: https://github.com/wesbos/JavaScript30/blob/master/26%20-%20Stripe%20Follow%20Along%20Nav/index-FINISHED.html -->
             <g-link to="/">
             <g-image src="~/assets/img/logo.png" width="130" quality="100" alt="GROWs logo"></g-image>
             </g-link>
@@ -92,10 +93,10 @@
 <script>
 export default {
   mounted: function() {
+    // Tredjepartskode fra Wes Bos på Github: https://github.com/wesbos/JavaScript30/blob/master/26%20-%20Stripe%20Follow%20Along%20Nav/index-FINISHED.html
     const triggers = document.querySelectorAll('.cool > li:nth-child(-n+3)');
     const background  = document.querySelector('.dropdownBackground');
     const nav  = document.querySelector('.top');
-
     function handleEnter() {
         if(window.innerWidth > 1024) {
             this.classList.add('trigger-enter');

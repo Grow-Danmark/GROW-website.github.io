@@ -90,9 +90,9 @@
         <h5>GROW støtter:</h5>
         <div class="verdensmaal">
             <a href="https://www.verdensmaalene.dk/fakta/verdensmaalene" target="_blank" rel="noopener noreferrer">
-                <g-image src="../assets/img/verdensmaal/vm-3.png"></g-image>
-                <g-image src="../assets/img/verdensmaal/vm-4.png"></g-image>
-                <g-image src="../assets/img/verdensmaal/vm-10.png"></g-image>
+                <g-image src="../assets/img/verdensmaal/vm-3.png" alt="FNs 3. verdensmål"></g-image>
+                <g-image src="../assets/img/verdensmaal/vm-4.png" alt="FNs 4. verdensmål"></g-image>
+                <g-image src="../assets/img/verdensmaal/vm-10.png" alt="FNs 10. verdensmål"></g-image>
             </a>
         </div>
     </div>

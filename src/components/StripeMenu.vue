@@ -177,7 +177,6 @@ nav ul {
   content: '|';
 }
 .cool > li > a {
-  color: c.$black;
   font-weight: 400;
   padding: 1em 0.5em;
   display: inline-block;
@@ -389,6 +388,10 @@ nav ul {
 .dropdown a {
   text-decoration: none;
 }
-
+.active--exact {
+  color: var(--clr-teal-300);
+  font-weight: 600;
+  overflow: hidden;
+}
 
 </style>

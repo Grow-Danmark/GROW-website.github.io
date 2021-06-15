@@ -28,10 +28,10 @@
 }
 
 // Setting text colors based on type scale weights 100-900
-@each $color, $shades in c.$colors {
-  @each $shade, $value in $shades {
-    .text-#{$color}-#{$shade} {
-      color: $value;
-    }
-  }
-}
+// @each $color, $shades in c.$colors {
+//   @each $shade, $value in $shades {
+//     .text-#{$color}-#{$shade} {
+//       color: $value;
+//     }
+//   }
+// }

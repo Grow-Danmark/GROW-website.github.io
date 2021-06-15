@@ -86,7 +86,7 @@ export default {
         margin: .2em 0;
     }
     a:hover {
-        color: teal;        
+        color: var(--clr-teal-400);        
         transition: .2s ease-in;
     }
 }

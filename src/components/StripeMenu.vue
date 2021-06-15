@@ -185,7 +185,7 @@ nav ul {
   opacity: 0;
   position: absolute;
   padding: 1em;
-  top: 0em;
+  top: -1em;
   /* Positionen på drowdown-elementet */
   border-radius: 2em;
   transition: all 0.5s;
@@ -357,7 +357,8 @@ nav ul {
     font-size: 1.2em;
     min-width: 12em;
     margin: 0 0 0.5em 0;
-    color: var(--clr-teal-500);
+    color: var(--clr-teal-400);
+    opacity: 50%;
   }
   ul {
     display: flex;

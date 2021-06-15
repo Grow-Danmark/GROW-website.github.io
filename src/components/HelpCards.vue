@@ -22,9 +22,11 @@
     <h3 class="help-text">{{ $static.page.helpCards.heading4 }}</h3>
   </div>
  </div>
-  <g-link to="/vaerdier">
-  <button class="btn--medium row">Læs mere om vores værdier</button>
+ <div class="help-btn">
+  <g-link to="/faa-hjaelp-hos-grow" class="centered">
+  <button class="btn--medium row">Få hjælp</button>
   </g-link>
+ </div>
 </section>
 </template>
 
@@ -79,12 +81,9 @@ export default {
   margin: 2em auto
 
 }
-  @include v.mq(small) {
-  .grid-columns {
-  
+.help-btn {
+  display: flex;
 }
-}
-
 .help-card {
   display: flex;
   flex-direction: column;

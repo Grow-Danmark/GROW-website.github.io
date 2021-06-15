@@ -46,14 +46,6 @@ a {
   text-decoration: none;
 }
 
-@each $color, $shades in c.$colors {
-  @each $shade, $value in $shades {
-    .text-#{$color}-#{$shade} {
-      color: $value;
-    }
-  }
-}
-
 .clr-teal {
   color: var(--clr-teal-400);
 }

@@ -10,21 +10,21 @@
       --clr-#{$color}-#{$shade}: #{$value};
     }
   }
-  // setting font sizes with the same principle as above
-  // but with small and large screen sizes though an if-else statement
-  @each $screen-size, $font-size in ts.$type-scale {
-    @if $screen-size == small {
-      @each $size, $value in $font-size {
-        --fs-#{$size}: #{$value};
-      }
-    } @else {
-      @media screen and(min-width: large) {
-        @each $size, $value in $font-size {
-          --fs-#{$size}: #{$value};
-        }
-      }
-    }
-  }
+  // // setting font sizes with the same principle as above
+  // // but with small and large screen sizes though an if-else statement
+  // @each $screen-size, $font-size in ts.$type-scale {
+  //   @if $screen-size == small {
+  //     @each $size, $value in $font-size {
+  //       --fs-#{$size}: #{$value};
+  //     }
+  //   } @else {
+  //     @media screen and(min-width: large) {
+  //       @each $size, $value in $font-size {
+  //         --fs-#{$size}: #{$value};
+  //       }
+  //     }
+  //   }
+  // }
 }
 
 // Setting text colors based on type scale weights 100-900

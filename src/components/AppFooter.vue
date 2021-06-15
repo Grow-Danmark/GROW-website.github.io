@@ -82,6 +82,7 @@ export default {
     margin: 2em 5em;
 
     a {
+        font-size: 1em;
         max-width: 20ch;
         margin: .2em 0;
     }

@@ -21,6 +21,6 @@ module.exports = {
       },
     },
   ],
-  siteUrl: 'https://grow-danmark.github.io',
-  pathPrefix: '/GROW-website.github.io',
+  // siteUrl: 'https://grow-danmark.github.io',
+  // pathPrefix: '/GROW-website.github.io',
 };

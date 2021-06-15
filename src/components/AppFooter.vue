@@ -12,16 +12,15 @@
 
             <div class="footer-nav-section-items">
                 <h5>Mød teamet bag GROW</h5>
-                <g-link to="/vores-historie">Vores historie</g-link>
-                <g-link to="/formaal-vison">Formål og vision</g-link>
-                <g-link to="/vaerdier">Værdier</g-link>
+                <g-link to="/grow-teamet">GROW teamet</g-link>
+                <g-link to="/samarbejdspartnere">Samarbejdspartnere</g-link>
             </div>
         </div>
             <div class="footer-nav-section-items footer-forskel">
                 <h5>Gør en forskel</h5>
-                <g-link to="/vores-historie">Vores historie</g-link>
-                <g-link to="/formaal-vison">Formål og vision</g-link>
-                <g-link to="/vaerdier">Værdier</g-link>
+                <g-link to="/bliv-ambassador">Bliv GROW-ambassadør</g-link>
+                <g-link to="/bliv-samarbejdspartner">Bliv samarbejdspartner</g-link>
+                <g-link to="/stot-grow">Støt GROW</g-link>
             </div>
 
         <div class="footer-nav-section-items footer-hjaelp">
@@ -42,7 +41,11 @@
         </div>
             <div class="footer-nav-section-items verdensmaal">
             <h5>GROW støtter:</h5>
-            <g-link to="/vaerdier">Indsæt verdensmål</g-link>
+            <div class="verdensmaal">
+            <g-image src="../assets/img/verdensmaal/vm-3.png" alt="FNs 3. verdensmål"></g-image>
+            <g-image src="../assets/img/verdensmaal/vm-4.png" alt="FNs 4. verdensmål"></g-image>
+            <g-image src="../assets/img/verdensmaal/vm-10.png" alt="FNs 10. verdensmål"></g-image>
+            </div>
         </div>
     </div>
 
@@ -77,7 +80,6 @@ export default {
     margin: 2em 5em;
 
     a {
-        color: black;
         max-width: 20ch;
         margin: .2em 0;
     }
@@ -113,5 +115,8 @@ export default {
         "footer-social footer-social . .";
     }
 }
-
+.verdensmaal {
+    display: flex;
+    justify-content: space-between;
+}
 </style>

@@ -59,8 +59,12 @@ figure img {
   align-items: center;
 }
 
-.listStyleLogo ul {
-  list-style-image: url('~@/assets/img/listicons/logoGreen1.png');
+.listStyleLogo ul li {
+  background: url('~@/assets/img/listicons/logoGreen1.png') no-repeat left center;
+  padding: 20px 0px 0px 60px;
+  list-style: none;
+  margin: 0;
+  vertical-align: middle;
 }
 
 .wp-block-quote {

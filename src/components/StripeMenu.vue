@@ -82,11 +82,14 @@
                 </div>
             </div>
         </li>
-            <li>
+            <!-- <li>
                 <g-link class="menu-item" to="/faa-hjaelp-hos-grow">Få hjælp hos GROW</g-link>
-            </li>
+            </li> -->
             <li>
                 <g-link class="menu-item" to="/kontakt">Kontakt os</g-link>
+            </li>
+            <li>
+              <g-link to="/faa-hjaelp-hos-grow" class="btn--teal menu-btn">Find hjælp</g-link>
             </li>
         </ul>
     </ul>
@@ -172,6 +175,9 @@ nav ul {
 }
 .cool > li:not(:last-child):after  {
   content: '|';
+}
+.cool > li:last-child  {
+  margin: 0 0 0 1em;
 }
 .cool > li > a {
   font-weight: 400;
@@ -387,6 +393,12 @@ nav ul {
 }
 .active--exact {
   color: var(--clr-teal-300);
+}
+.menu-btn {
+  color: c.$white;
+}
+.menu-btn:hover {
+  color: c.$white;
 }
 
 </style>

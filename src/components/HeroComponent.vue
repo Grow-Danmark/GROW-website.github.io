@@ -54,12 +54,12 @@ export default {
   flex-direction: row;
 }
 .hero-image { 
-  margin: 0 auto;
+  margin: 0 auto 1em auto;
 
-  // img {
-  //   width: 500px;
-  //   height: 500px;
-  // }
+  img {
+    width: 20em;
+    height: 20em;
+  }
  }
 .hero-section h1 {
    max-width: 16ch; 

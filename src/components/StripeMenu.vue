@@ -214,7 +214,7 @@ nav ul {
 
 @include v.mq(large) {
   .nav-logo {
-    padding: 2em 0;
+    padding: 2em 0 0 0;
     justify-content: center;
   }
   nav ul {
@@ -292,10 +292,10 @@ nav ul {
   #burger {
     position: absolute;
     cursor: pointer;
-    width: 2rem;
-    height: 2rem;
-    right: 1rem;
-    top: 1rem;
+    width: 2em;
+    height: 2em;
+    right: 1em;
+    top: 2em;
     display: flex;
     justify-content: space-between;
     flex-direction: column;

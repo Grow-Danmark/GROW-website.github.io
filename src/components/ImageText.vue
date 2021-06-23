@@ -59,7 +59,7 @@ export default {
 }
 .section-image-container {
   img {
-    max-width: 30em;
+    max-width: 20em;
   }
 }
 

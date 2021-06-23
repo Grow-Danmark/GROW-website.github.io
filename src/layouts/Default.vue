@@ -3,7 +3,12 @@
     <AppHeader />
       <transition name="fade" appear>
          <main>
-          <slot /> <!-- the content -->   
+           <slot /> <!-- the content -->  
+           <a href="#app">
+            <button class="to-top">
+              Til top
+            </button>
+          </a> 
         </main> 
       </transition>
     <AppFooter />
@@ -32,7 +37,10 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
+html {
+  scroll-behavior: smooth;
+}
 .fade-enter-active {
   transition: opacity .5s;
 }
@@ -40,5 +48,13 @@ export default {
 .fade-enter {
   opacity: 0;
 }
-
+.to-top {
+  position: absolute;
+  right: 5em;
+  padding: .5em 1em;
+  
+  a {
+    color: white;
+  }
+  }
 </style>

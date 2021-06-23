@@ -142,6 +142,7 @@ export default {
 @use '../assets/sass/abstracts/colors' as c;
 @use '../assets/sass/abstracts/variables' as v;
 
+
 nav {
   position: relative;
   perspective: 600px;

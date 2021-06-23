@@ -1,7 +1,7 @@
 <template>
   <section class="section-img-text">
     <div class="section-image-container">
-      <img src="http://wp.grow.dk/wp-content/uploads/2021/06/imgLanding2.png" :alt="$static.page.heroSection.heroImg.altText" class="hero-image alpha-target">
+      <img src="http://wp.grow.dk/wp-content/uploads/2021/06/imgLanding2.png" :alt="$static.page.heroSection.heroImg.altText" class="section-image">
     </div>
     <div class="section-text-container">
     <h2>Vi er nærværende dér, hvor det gør en forskel</h2>
@@ -54,20 +54,19 @@ export default {
 .section-img-text {
     display: grid;
     grid-auto-flow: column;
-    justify-content: center;
     grid-column-gap: 5em;
 }
-.section-image-container {
-  img {
-    max-width: 20em;
-  }
+.section-image {
+  max-width: 90%;
 }
-
+.section-image-container {
+  margin: 0 auto;
+}
 @include v.mq(large) {
   .section-img-text {
     display: grid;
     grid-auto-flow: row;
-}
+  }
 }
 
 </style>

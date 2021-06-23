@@ -11,7 +11,7 @@
     </g-link>
     </div>
     <div class="section-image-container">
-      <img :src="$static.page.secondSection.blockImage.sourceUrl" :alt="$static.page.secondSection.blockImage.altText">
+      <img :src="$static.page.secondSection.blockImage.sourceUrl" :alt="$static.page.secondSection.blockImage.altText" class="section-image">
     </div>
 </section>
 </template>

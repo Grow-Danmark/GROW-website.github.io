@@ -22,11 +22,11 @@
     <h3 class="help-text">{{ $static.page.helpCards.heading4 }}</h3>
   </div>
  </div>
- <div class="help-btn">
+ <!-- <div class="help-btn">
   <g-link to="/faa-hjaelp-hos-grow" class="centered">
   <button class="btn--medium row">Få hjælp</button>
   </g-link>
- </div>
+ </div> -->
 </section>
 </template>
 

@@ -14,9 +14,9 @@
       <li>Meningsfuldhed</li>
       <li>Balance</li>
     </ul>
-    <g-link to="/formaal-vision">
+    <!-- <g-link to="/formaal-vision">
       <button class="btn--small">Læs mere her</button>
-    </g-link>
+    </g-link> -->
     </div>
 </section>
 </template>

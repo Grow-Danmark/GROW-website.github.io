@@ -1,8 +1,5 @@
 <template>
   <section class="section-img-text">
-    <div class="section-image-container">
-      <img :src="$static.page.secondSection.blockImage.sourceUrl" :alt="$static.page.secondSection.blockImage.altText">
-    </div>
     <div class="section-text-container">
     <h2>{{ $static.page.secondSection.blockHeading }}</h2>
     <p class="subheading">{{ $static.page.secondSection.blockText }}</p>
@@ -12,6 +9,9 @@
         Mød GROW teamet
       </button>
     </g-link>
+    </div>
+    <div class="section-image-container">
+      <img :src="$static.page.secondSection.blockImage.sourceUrl" :alt="$static.page.secondSection.blockImage.altText">
     </div>
 </section>
 </template>

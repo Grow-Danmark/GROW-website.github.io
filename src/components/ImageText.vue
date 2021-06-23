@@ -54,6 +54,8 @@ export default {
 .section-img-text {
     display: grid;
     grid-auto-flow: column;
+    justify-content: center;
+    grid-column-gap: 5em;
 }
 .section-image-container {
   img {

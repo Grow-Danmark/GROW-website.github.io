@@ -82,14 +82,13 @@
                 </div>
             </div>
         </li>
-            <!-- <li>
-                <g-link class="menu-item" to="/faa-hjaelp-hos-grow">Få hjælp hos GROW</g-link>
-            </li> -->
             <li>
                 <g-link class="menu-item" to="/kontakt">Kontakt os</g-link>
             </li>
             <li>
-              <g-link to="/faa-hjaelp-hos-grow" class="btn--teal menu-btn">Find hjælp</g-link>
+              <g-link to="/faa-hjaelp-hos-grow" class="btn--teal menu-btn">
+              Få hjælp
+              </g-link>
             </li>
         </ul>
     </ul>
@@ -396,6 +395,9 @@ nav ul {
 }
 .menu-btn {
   color: c.$white;
+  width: 7em;
+  text-align: center;
+  padding: 0;
 }
 .menu-btn:hover {
   color: c.$white;

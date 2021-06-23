@@ -4,9 +4,8 @@
       <p class="heroText">{{ $static.page.heroSection.welcome }}</p>
       <h1>{{ $static.page.heroSection.heading }}</h1>
       <p class="subheading">{{ $static.page.heroSection.heroText }}</p>
-      <g-link to="/vores-historie">
-      <button class="btn--large">Læs mere</button>
-      </g-link>
+      <br>
+      <p class="subheading">{{ $static.page.heroSection.heroText2 }}</p>
     </div>
 
     <div class="hero-image">
@@ -22,6 +21,7 @@ query hero {
     heroSection {
       heading
       heroText
+      heroText2
       welcome
       heroImg {
         altText

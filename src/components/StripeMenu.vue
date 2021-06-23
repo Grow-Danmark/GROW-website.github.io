@@ -303,13 +303,13 @@ nav ul {
 
   #burger > div {
     height: 2px;
-    background-color: c.$black;
+    background-color: var(--clr-teal-400);
     transition: 0.5s;
     z-index: 999;
   }
 
   #onOffToggle:checked ~ #burger > div {
-    background-color: black;
+    background-color: var(--clr-teal-400);
   }
   #onOffToggle:checked ~ #burger > div:nth-child(1) {
     transform: translateY(15px) rotate(45deg);

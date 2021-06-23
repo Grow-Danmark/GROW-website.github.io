@@ -97,7 +97,7 @@
 export default {
   mounted: function() {
     // Tredjepartskode fra Wes Bos på Github: https://github.com/wesbos/JavaScript30/blob/master/26%20-%20Stripe%20Follow%20Along%20Nav/index-FINISHED.html
-    const triggers = document.querySelectorAll('.cool > li:nth-child(-n+4)');
+    const triggers = document.querySelectorAll('.cool > li:nth-child(-n+4):not(:first-child)');
     const background  = document.querySelector('.dropdownBackground');
     const nav  = document.querySelector('.top');
     function handleEnter() {

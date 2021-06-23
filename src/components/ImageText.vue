@@ -67,14 +67,6 @@ export default {
   .section-img-text {
     display: grid;
     grid-auto-flow: row;
-
-  .section-image-container {
-    margin: 0 auto;
-  img {
-  max-width: 20em;
-  margin: 0 auto;
-  }
-}
 }
 }
 

@@ -151,9 +151,6 @@ nav {
   display: flex;
   align-items: center;
 }
-.nav-logo-mobile {
-  display: none;
-}
 
 nav ul {
   z-index: 20;
@@ -214,8 +211,9 @@ nav ul {
 
 @include v.mq(large) {
   .nav-logo {
-    padding: 2em 0 0 0;
-    justify-content: center;
+    padding: 2.2em 0 0 0;
+    justify-content: flex-start;
+    margin: 0 0 0 3em;
   }
   nav ul {
     justify-content: end;

@@ -216,7 +216,7 @@ nav ul {
     margin: 0 0 0 3em;
   }
   nav ul {
-    justify-content: end;
+    justify-content: center;
     flex-direction: column;
   }
   .cool {
@@ -230,7 +230,7 @@ nav ul {
 
     a {
       padding: 0;
-      text-align: left;
+      // text-align: left;
     }
     span {
       margin: .5em auto;
@@ -239,6 +239,9 @@ nav ul {
   }
   .cool > li > a {
     font-weight: 500;
+  }
+  .cool > li > a:last-child {
+    padding: 1em;
   }
   .cool > li:not(:last-child):after  {
   content: '';
@@ -398,6 +401,13 @@ nav ul {
   text-align: center;
   padding: 0;
 }
+.menu-btn a {
+  color: c.$white;
+}
+.menu-btn a:hover {
+  color: c.$white;
+}
+
 .menu-btn:hover {
   color: c.$white;
 }

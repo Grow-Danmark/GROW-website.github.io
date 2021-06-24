@@ -181,7 +181,6 @@ nav ul {
   padding: 1em 0.5em;
   display: inline-block;
   margin: 1.2em auto;
-
 }
 .menu-item {
   font-weight: 600;

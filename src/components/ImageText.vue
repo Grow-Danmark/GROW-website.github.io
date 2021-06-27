@@ -1,7 +1,7 @@
 <template>
   <section class="section-img-text">
     <div class="section-image-container">
-      <img src="http://wp.grow.dk/wp-content/uploads/2021/06/imgLanding2.png" :alt="$static.page.heroSection.heroImg.altText" class="section-image">
+      <img src="https://wp.grow.dk/wp-content/uploads/2021/06/imgLanding2.png" :alt="$static.page.heroSection.heroImg.altText" class="section-image">
     </div>
     <div class="section-text-container">
     <h2>Vi er nærværende dér, hvor det gør en forskel</h2>
